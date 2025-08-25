@@ -1,0 +1,362 @@
+{
+  "Monday": [
+    {
+      "__EMPTY": "CSE-3-1",
+      "9-10": "OOP \r\n(AVL)\r\nB-209",
+      "10-11": "DS \r\n(SK)\r\nB-209",
+      "11-12": "DLD Lab (A)\r\n(AM)\r\nCS105",
+      "12-1": "DLD Lab (A)\r\n(AM)\r\nCS105",
+      "2-3": "",
+      "3-4": "DBE Lab (A)\r\n(SP)\r\nCS107",
+      "4-5": "DBE Lab (A)\r\n(SP)\r\nCS107"
+    },
+    {
+      "__EMPTY": "CSE-3-2",
+      "9-10": "DBE Lab (A)\r\n(KN)\r\nCS105",
+      "10-11": "DBE Lab (A)\r\n(KN)\r\nCS105",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "DS \r\n(GS)\r\nB-209",
+      "3-4": "DLD \r\n(SWP)\r\nB-209",
+      "4-5": "OOP \r\n(SS)\r\nB-209"
+    },
+    {
+      "__EMPTY": "AIML-3",
+      "9-10": "OOP Lab (B)\r\n(SKB)\r\nCS106",
+      "10-11": "OOP Lab (B)\r\n(SKB)\r\nCS106",
+      "11-12": "DLD Lab (B)\r\n(PKS)\r\nCS220",
+      "12-1": "DLD Lab (B)\r\n(PKS)\r\nCS220",
+      "2-3": "",
+      "3-4": "DBE \r\n(GF4)\r\nA-32",
+      "4-5": "DS \r\n(SKS)\r\nA-32"
+    },
+    {
+      "__EMPTY": "CSE-5",
+      "9-10": "OS \r\n(HSB)\r\nB-205",
+      "10-11": "TOC \r\n(GF2)\r\nB-205",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "",
+      "3-4": "AI/ML Lab (B)\r\n(PKD)\r\nCS220",
+      "4-5": "AI/ML Lab (B)\r\n(PKD)\r\nCS220"
+    },
+    {
+      "__EMPTY": "IT-5",
+      "9-10": "",
+      "10-11": "",
+      "11-12": "AI/ML Lab (B)\r\n(GF3)\r\nCS115",
+      "12-1": "AI/ML Lab (B)\r\n(GF3)\r\nCS115",
+      "2-3": "TOC \r\n(KKS)\r\nB-205",
+      "3-4": "DMDW \r\n(BN)\r\nB-205",
+      "4-5": "OS \r\n(SBD)\r\nB-205"
+    },
+    {
+      "__EMPTY": "CSE-7",
+      "9-10": "",
+      "10-11": "",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "IP \r\n(KN)\r\nD-303",
+      "3-4": "IWP \r\n(GF6)\r\nD-303",
+      "4-5": "AI \r\n(GF5)\r\nD-303"
+    },
+    {
+      "__EMPTY": "IT-7",
+      "9-10": "",
+      "10-11": "",
+      "11-12": "Artificial Intelligence Lab (B)\r\n(MRS)\r\nCS106",
+      "12-1": "Artificial Intelligence Lab (B)\r\n(MRS)\r\nCS106",
+      "2-3": "",
+      "3-4": "",
+      "4-5": ""
+    }
+  ],
+  "Tuesday": [
+    {
+      "__EMPTY": "CSE-3-1",
+      "9-10": "DBE \r\n(SP)\r\nB-209",
+      "10-11": "DS \r\n(SK)\r\nB-209",
+      "11-12": "OOP Lab (A)\r\n(AVL)\r\nCS208",
+      "12-1": "OOP Lab (A)\r\n(AVL)\r\nCS208",
+      "2-3": "",
+      "3-4": "DLD Lab (B)\r\n(AM)\r\nCS106",
+      "4-5": "DLD Lab (B)\r\n(AM)\r\nCS106"
+    },
+    {
+      "__EMPTY": "CSE-3-2",
+      "9-10": "DLD Lab (A)\r\n(SWP)\r\nCS105",
+      "10-11": "DLD Lab (A)\r\n(SWP)\r\nCS105",
+      "11-12": "DS Lab (B)\r\n(GS)\r\nCS115",
+      "12-1": "DS Lab (B)\r\n(GS)\r\nCS115",
+      "2-3": "",
+      "3-4": "OOP Lab (B)\r\n(SS)\r\nCS205",
+      "4-5": "OOP Lab (B)\r\n(SS)\r\nCS205"
+    },
+    {
+      "__EMPTY": "AIML-3",
+      "9-10": "DLD Lab (A)\r\n(PKS)\r\nCS205",
+      "10-11": "DLD Lab (A)\r\n(PKS)\r\nCS205",
+      "11-12": "DS Lab (B)\r\n(SKS)\r\nCS204",
+      "12-1": "DS Lab (B)\r\n(SKS)\r\nCS204",
+      "2-3": "",
+      "3-4": "OOP \r\n(SKB)\r\nA-32",
+      "4-5": "DBE \r\n(GF4)\r\nA-32"
+    },
+    {
+      "__EMPTY": "CSE-5",
+      "9-10": "OS Lab (B)\r\n(HSB)\r\nCS106",
+      "10-11": "OS Lab (B)\r\n(HSB)\r\nCS106",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "CNS \r\n(SPanda)\r\nB-205",
+      "3-4": "TOC \r\n(GF2)\r\nB-205",
+      "4-5": "AI/ML \r\n(PKD)\r\nB-205"
+    },
+    {
+      "__EMPTY": "IT-5",
+      "9-10": "TOC \r\n(KKS)\r\nB-205",
+      "10-11": "DMDW \r\n(BN)\r\nB-205",
+      "11-12": "AI/ML Lab (A)\r\n(GF3)\r\nCS105",
+      "12-1": "AI/ML Lab (A)\r\n(GF3)\r\nCS105",
+      "2-3": "",
+      "3-4": "OS Lab (B)\r\n(SBD)\r\nCS115",
+      "4-5": "OS Lab (B)\r\n(SBD)\r\nCS115"
+    },
+    {
+      "__EMPTY": "CSE-7",
+      "9-10": "",
+      "10-11": "",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "AI \r\n(GF5)\r\nD-303",
+      "3-4": "IP \r\n(KN)\r\nD-303",
+      "4-5": "IWP \r\n(GF6)\r\nD-303"
+    },
+    {
+      "__EMPTY": "IT-7",
+      "9-10": "SM \r\n(SKN)\r\nD-303",
+      "10-11": "CS \r\n(AD)\r\nD-303",
+      "11-12": "AI \r\n(MRS)\r\nD-303",
+      "12-1": "",
+      "2-3": "",
+      "3-4": "",
+      "4-5": ""
+    }
+  ],
+  "Wednesday": [
+    {
+      "__EMPTY": "CSE-3-1",
+      "9-10": "",
+      "10-11": "",
+      "11-12": "DS Lab (B)\r\n(SK)\r\nCS106",
+      "12-1": "DS Lab (B)\r\n(SK)\r\nCS106",
+      "2-3": "OOP \r\n(AVL)\r\nB-209",
+      "3-4": "DBE \r\n(SP)\r\nB-209",
+      "4-5": "DLD \r\n(AM)\r\nB-209"
+    },
+    {
+      "__EMPTY": "CSE-3-2",
+      "9-10": "DBE \r\n(KN)\r\nB-209",
+      "10-11": "OOP \r\n(SS)\r\nB-209",
+      "11-12": "DBE \r\n(KN)\r\nB-209",
+      "12-1": "DS \r\n(GS)\r\nB-209",
+      "2-3": "",
+      "3-4": "DLD Lab (B)\r\n(SWP)\r\nCS106",
+      "4-5": "DLD Lab (B)\r\n(SWP)\r\nCS106"
+    },
+    {
+      "__EMPTY": "AIML-3",
+      "9-10": "",
+      "10-11": "",
+      "11-12": "DS Lab (A)\r\n(SKS)\r\nCS220",
+      "12-1": "DS Lab (A)\r\n(SKS)\r\nCS220",
+      "2-3": "DBE \r\n(GF4)\r\nA-32",
+      "3-4": "OOP \r\n(SKB)\r\nA-32",
+      "4-5": "DLD \r\n(PKS)\r\nA-32"
+    },
+    {
+      "__EMPTY": "CSE-5",
+      "9-10": "CNS \r\n(SPanda)\r\nB-205",
+      "10-11": "OS \r\n(HSB)\r\nB-205",
+      "11-12": "TOC Lab (A)\r\n(GF2)\r\nCS204",
+      "12-1": "TOC Lab (A)\r\n(GF2)\r\nCS204",
+      "2-3": "",
+      "3-4": "AI/ML Lab (A)\r\n(PKD)\r\nCS105",
+      "4-5": "AI/ML Lab (A)\r\n(PKD)\r\nCS105"
+    },
+    {
+      "__EMPTY": "IT-5",
+      "9-10": "OS Lab (A)\r\n(SBD)\r\nCS205",
+      "10-11": "OS Lab (A)\r\n(SBD)\r\nCS205",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "",
+      "3-4": "TOC \r\n(KKS)\r\nB-205",
+      "4-5": "AI/ML \r\n(GF3)\r\nB-205"
+    },
+    {
+      "__EMPTY": "CSE-7",
+      "9-10": "Web Programming Lab (A)\r\n(GF6)\r\nCS208",
+      "10-11": "Web Programming Lab (A)\r\n(GF6)\r\nCS208",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "",
+      "3-4": "",
+      "4-5": ""
+    },
+    {
+      "__EMPTY": "IT-7",
+      "9-10": "",
+      "10-11": "",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "SM \r\n(SKN)\r\nD-303",
+      "3-4": "CS \r\n(AD)\r\nD-303",
+      "4-5": "AI \r\n(MRS)\r\nD-303"
+    }
+  ],
+  "Thursday": [
+    {
+      "__EMPTY": "CSE-3-1",
+      "9-10": "OOP \r\n(AVL)\r\nB-209",
+      "10-11": "DLD \r\n(AM)\r\nB-209",
+      "11-12": "DBE Lab (B)\r\n(SP)\r\nCS205",
+      "12-1": "DBE Lab (B)\r\n(SP)\r\nCS205",
+      "2-3": "",
+      "3-4": "DS Lab (A)\r\n(SK)\r\nCS220",
+      "4-5": "DS Lab (A)\r\n(SK)\r\nCS220"
+    },
+    {
+      "__EMPTY": "CSE-3-2",
+      "9-10": "DS Lab (A)\r\n(GS)\r\nCS105",
+      "10-11": "DS Lab (A)\r\n(GS)\r\nCS105",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "OOP \r\n(SS)\r\nB-209",
+      "3-4": "DLD \r\n(SWP)\r\nB-209",
+      "4-5": "DBE \r\n(KN)\r\nB-209"
+    },
+    {
+      "__EMPTY": "AIML-3",
+      "9-10": "DBE Lab (B)\r\n(GF4)\r\nCS205",
+      "10-11": "DBE Lab (B)\r\n(GF4)\r\nCS205",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "DLD \r\n(PKS)\r\nA-32",
+      "3-4": "OOP \r\n(SKB)\r\nA-32",
+      "4-5": "DS \r\n(SKS)\r\nA-32"
+    },
+    {
+      "__EMPTY": "CSE-5",
+      "9-10": "OS \r\n(HSB)\r\nB-205",
+      "10-11": "CNS \r\n(SPanda)\r\nB-205",
+      "11-12": "AI/ML \r\n(PKD)\r\nB-205",
+      "12-1": "",
+      "2-3": "",
+      "3-4": "TOC Lab (B)\r\n(GF2)\r\nCS205",
+      "4-5": "TOC Lab (B)\r\n(GF2)\r\nCS205"
+    },
+    {
+      "__EMPTY": "IT-5",
+      "9-10": "",
+      "10-11": "",
+      "11-12": "TOC Lab (B)\r\n(KKS)\r\nCS204",
+      "12-1": "TOC Lab (B)\r\n(KKS)\r\nCS204",
+      "2-3": "",
+      "3-4": "AI/ML \r\n(GF3)\r\nB-205",
+      "4-5": "OS \r\n(SBD)\r\nB-205"
+    },
+    {
+      "__EMPTY": "CSE-7",
+      "9-10": "IWP \r\n(GF6)\r\nD-303",
+      "10-11": "IP \r\n(KN)\r\nD-303",
+      "11-12": "AI \r\n(GF5)\r\nD-303",
+      "12-1": "",
+      "2-3": "",
+      "3-4": "",
+      "4-5": ""
+    },
+    {
+      "__EMPTY": "IT-7",
+      "9-10": "",
+      "10-11": "",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "",
+      "3-4": "Artificial Intelligence Lab (A)\r\n(MRS)\r\nCS208",
+      "4-5": "Artificial Intelligence Lab (A)\r\n(MRS)\r\nCS208"
+    }
+  ],
+  "Friday": [
+    {
+      "__EMPTY": "CSE-3-1",
+      "9-10": "",
+      "10-11": "",
+      "11-12": "OOP Lab (B)\r\n(AVL)\r\nCS107",
+      "12-1": "OOP Lab (B)\r\n(AVL)\r\nCS107",
+      "2-3": "DBE \r\n(SP)\r\nB-209",
+      "3-4": "DS \r\n(SK)\r\nB-209",
+      "4-5": "DLD \r\n(AM)\r\nB-209"
+    },
+    {
+      "__EMPTY": "CSE-3-2",
+      "9-10": "DS \r\n(GS)\r\nB-209",
+      "10-11": "DLD \r\n(SWP)\r\nB-209",
+      "11-12": "OOP Lab (A)\r\n(SS)\r\nCS205",
+      "12-1": "OOP Lab (A)\r\n(SS)\r\nCS205",
+      "2-3": "",
+      "3-4": "DBE Lab (B)\r\n(KN)\r\nCS106",
+      "4-5": "DBE Lab (B)\r\n(KN)\r\nCS106"
+    },
+    {
+      "__EMPTY": "AIML-3",
+      "9-10": "DBE Lab (A)\r\n(GF4)\r\nCS107",
+      "10-11": "DBE Lab (A)\r\n(GF4)\r\nCS107",
+      "11-12": "OOP Lab (A)\r\n(SKB)\r\nCS208",
+      "12-1": "OOP Lab (A)\r\n(SKB)\r\nCS208",
+      "2-3": "",
+      "3-4": "DLD \r\n(PKS)\r\nA-32",
+      "4-5": "DS \r\n(SKS)\r\nA-32"
+    },
+    {
+      "__EMPTY": "CSE-5",
+      "9-10": "OS Lab (A)\r\n(HSB)\r\nCS220",
+      "10-11": "OS Lab (A)\r\n(HSB)\r\nCS220",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "",
+      "3-4": "AI/ML \r\n(PKD)\r\nB-205",
+      "4-5": "TOC \r\n(GF2)\r\nB-205"
+    },
+    {
+      "__EMPTY": "IT-5",
+      "9-10": "DMDW \r\n(BN)\r\nB-205",
+      "10-11": "AI/ML \r\n(GF3)\r\nB-205",
+      "11-12": "OS \r\n(SBD)\r\nB-205",
+      "12-1": "",
+      "2-3": "",
+      "3-4": "TOC Lab (A)\r\n(KKS)\r\nCS105",
+      "4-5": "TOC Lab (A)\r\n(KKS)\r\nCS105"
+    },
+    {
+      "__EMPTY": "CSE-7",
+      "9-10": "",
+      "10-11": "",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "",
+      "3-4": "Web Programming Lab (B)\r\n(GF6)\r\nCS205",
+      "4-5": "Web Programming Lab (B)\r\n(GF6)\r\nCS205"
+    },
+    {
+      "__EMPTY": "IT-7",
+      "9-10": "",
+      "10-11": "",
+      "11-12": "",
+      "12-1": "",
+      "2-3": "SM \r\n(SKN)\r\nD-303",
+      "3-4": "CS \r\n(AD)\r\nD-303",
+      "4-5": "AI \r\n(MRS)\r\nD-303"
+    }
+  ]
+}
