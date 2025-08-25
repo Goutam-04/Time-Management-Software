@@ -235,9 +235,19 @@ for section in SECTIONS:
         ]
         model.Add(sum(daily_theory) <= 4)
 
-# NOTE: Previously there was a constraint disallowing both groups of same lab at same time for same subject.
-# We remove that prohibition to allow parallel labs for the same lab subject (different groups and different rooms).
-# Room uniqueness constraint already prevents a room being used twice at same time.
+# 8) NEW HARD RULE: For each section & group, max 2 labs per day (1 preferred, 2 allowed worst-case)
+for section in SECTIONS:
+    if section not in LABS:
+        continue
+    for group in GROUPS:
+        for day_idx in range(len(DAYS)):
+            labs_for_group_day = [
+                var for (sec, grp, subj, tc, d, s, rm), var in class_vars.items()
+                if sec == section and grp == group and d == day_idx and 'Lab' in subj
+            ]
+            if labs_for_group_day:
+                # Hard limit: at most 2 labs per day for this section-group
+                model.Add(sum(labs_for_group_day) <= 2)
 
 # ----------------------------
 # SOFT CONSTRAINTS / OBJECTIVE
@@ -248,12 +258,10 @@ for teacher in ALL_TEACHERS:
     max_load = model.NewIntVar(0, len(ALL_SLOTS), f"max_load_{teacher}")
     daily_loads = []
     for day_idx in range(len(DAYS)):
-        # sum of classes teacher has that day (labs count as 1 if they occur that day, theory as usual)
         classes_on_day = []
         for (sec, grp, subj, tc, d, s, rm), var in class_vars.items():
             if tc == teacher and d == day_idx:
                 classes_on_day.append(var)
-        # classes_on_day is a list of BoolVar; sum works
         daily_loads.append(sum(classes_on_day))
     model.AddMaxEquality(max_load, daily_loads)
     max_daily_load_vars.append(max_load)
@@ -282,7 +290,7 @@ for section in SECTIONS:
             model.Add(is_theory_scheduled[i] == is_theory_scheduled[i+1]).OnlyEnforceIf(trans.Not())
             continuity_penalties.append(trans)
 
-# 3) Prefer parallel labs (if both groups run labs in same slot) — weak preference
+# 3) Prefer parallel labs (if both groups run labs in same slot) — reward balanced group labs
 parallel_lab_penalties = []
 for section in SECTIONS:
     if section not in LABS:
@@ -299,28 +307,43 @@ for section in SECTIONS:
                 var for (sec, grp, subj, tc, d, s, rm), var in class_vars.items()
                 if sec == section and grp == 'B' and d == day_idx and s == slot_idx and 'Lab' in subj
             ]
-            # helper bools whether group A/B has a lab at this time
+            gA = None
+            gB = None
             if group_a_labs:
                 gA = model.NewBoolVar(f"gA_has_{section}_{day_idx}_{slot_idx}")
                 model.Add(sum(group_a_labs) > 0).OnlyEnforceIf(gA)
                 model.Add(sum(group_a_labs) == 0).OnlyEnforceIf(gA.Not())
-            else:
-                gA = None
             if group_b_labs:
                 gB = model.NewBoolVar(f"gB_has_{section}_{day_idx}_{slot_idx}")
                 model.Add(sum(group_b_labs) > 0).OnlyEnforceIf(gB)
                 model.Add(sum(group_b_labs) == 0).OnlyEnforceIf(gB.Not())
-            else:
-                gB = None
 
             if gA is not None and gB is not None:
+                # penalty variable = 1 when unbalanced (one group has lab and other doesn't)
                 unbalanced = model.NewBoolVar(f"unbal_{section}_{day_idx}_{slot_idx}")
-                # penalty when one group has lab and other doesn't
                 model.Add(gA != gB).OnlyEnforceIf(unbalanced)
                 model.Add(gA == gB).OnlyEnforceIf(unbalanced.Not())
                 parallel_lab_penalties.append(unbalanced)
 
-# 4) Prefer one lab session per day per section (soft)
+# 4) Prefer one lab per day per group (soft). If >1, allowed but penalized. Hard constraint above caps at 2.
+group_daily_lab_penalties = []
+for section in SECTIONS:
+    if section not in LABS:
+        continue
+    for group in GROUPS:
+        for day_idx in range(len(DAYS)):
+            labs_for_group_day = [
+                var for (sec, grp, subj, tc, d, s, rm), var in class_vars.items()
+                if sec == section and grp == group and d == day_idx and 'Lab' in subj
+            ]
+            if not labs_for_group_day:
+                continue
+            # penalty var = max(0, sum(labs_for_group_day) - 1)
+            pv = model.NewIntVar(0, len(LAB_SLOT_STARTS), f"group_lab_pen_{section}_{group}_{day_idx}")
+            model.Add(pv >= sum(labs_for_group_day) - 1)
+            group_daily_lab_penalties.append(pv)
+
+# 5) Prefer one lab session per section per day (existing soft objective)
 daily_lab_penalties = []
 for section in SECTIONS:
     for day_idx in range(len(DAYS)):
@@ -339,35 +362,37 @@ for section in SECTIONS:
             model.Add(sum(lab_at_slot) == 0).OnlyEnforceIf(helper.Not())
             lab_session_helpers.append(helper)
         if lab_session_helpers:
-            # penalty var = max(0, sum - 1)
             pv = model.NewIntVar(0, len(lab_session_helpers), f"lab_day_pen_{section}_{day_idx}")
             model.Add(pv >= sum(lab_session_helpers) - 1)
             daily_lab_penalties.append(pv)
 
-# Combine objective
+# Combine objective weights (adjusted to prefer parallel labs and penalize extra group labs)
 WORKLOAD_PENALTY_WEIGHT = 10
-PARALLEL_LAB_PENALTY_WEIGHT = 5
+PARALLEL_LAB_PENALTY_WEIGHT = 8   # increased to strongly prefer parallel labs when possible
 DAILY_LAB_PENALTY_WEIGHT = 3
 CONTINUITY_PENALTY_WEIGHT = 1
+GROUP_DAILY_LAB_PENALTY_WEIGHT = 6  # penalize more when a group has >1 lab in a day
 
 total_workload_penalty = sum(max_daily_load_vars)
 total_continuity_penalty = sum(continuity_penalties)
 total_parallel_lab_penalty = sum(parallel_lab_penalties)
 total_daily_lab_penalty = sum(daily_lab_penalties)
+total_group_lab_penalty = sum(group_daily_lab_penalties) if group_daily_lab_penalties else 0
 
 model.Minimize(
     WORKLOAD_PENALTY_WEIGHT * total_workload_penalty +
     CONTINUITY_PENALTY_WEIGHT * total_continuity_penalty +
     PARALLEL_LAB_PENALTY_WEIGHT * total_parallel_lab_penalty +
-    DAILY_LAB_PENALTY_WEIGHT * total_daily_lab_penalty
+    DAILY_LAB_PENALTY_WEIGHT * total_daily_lab_penalty +
+    GROUP_DAILY_LAB_PENALTY_WEIGHT * total_group_lab_penalty
 )
 
 # ----------------------------
 # SOLVE & EXPORT JSON (and Excel optionally)
 # ----------------------------
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 120.0
-# You can increase time or set solver.parameters.num_search_workers = 8 etc.
+solver.parameters.max_time_in_seconds = 180.0  # increased time a bit for harder model
+# solver.parameters.num_search_workers = 8  # you can enable if your machine has cores
 status = solver.Solve(model)
 
 def make_entry(subj, teacher, room, is_lab, group=None):
@@ -405,12 +430,9 @@ if status == cp_model.FEASIBLE or status == cp_model.OPTIMAL:
                     if 'Lab' in subj:
                         # occupies starting slot s and s+1
                         start_slot_idx = s
-                        # safety: if s is valid index
                         if 0 <= start_slot_idx < len(ALL_SLOTS):
                             entry = make_entry(subj, tc, rm, True, grp if grp in GROUPS else None)
-                            # append to start slot cell
                             section_obj[ALL_SLOTS[start_slot_idx]].append(entry)
-                            # also append into next slot cell to show span (optional)
                             if start_slot_idx + 1 < len(ALL_SLOTS):
                                 section_obj[ALL_SLOTS[start_slot_idx + 1]].append(entry.copy())
                     else:
