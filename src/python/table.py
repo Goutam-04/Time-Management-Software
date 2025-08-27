@@ -3,13 +3,7 @@ import json
 import pandas as pd
 from ortools.sat.python import cp_model
 
-# The openpyxl library is needed for advanced Excel formatting (optional)
-try:
-    from openpyxl import load_workbook
-    from openpyxl.styles import Font, Alignment, Border, Side
-    OPENPYXL_AVAILABLE = True
-except ImportError:
-    OPENPYXL_AVAILABLE = False
+
 
 # ----------------------------
 # CONFIGURATIONS / INPUT DATA
@@ -469,62 +463,10 @@ if status == cp_model.FEASIBLE or status == cp_model.OPTIMAL:
         output[day] = day_list
 
     # write JSON
-    json_path = "University_Master_Timetable.json"
+    json_path = "src/output/University_Master_Timetable.json"
     with open(json_path, "w", encoding="utf-8") as jf:
         json.dump(output, jf, indent=2, ensure_ascii=False)
     print(f"✅ JSON exported to {json_path}")
-
-    # optional Excel export (same formatting as before)
-    if OPENPYXL_AVAILABLE:
-        excel_path = "University_Master_Timetable.xlsx"
-        with pd.ExcelWriter(excel_path, engine='openpyxl') as writer:
-            for day_idx, day in enumerate(DAYS):
-                # build dataframe
-                master_df = pd.DataFrame(index=SECTIONS, columns=ALL_SLOTS).fillna("")
-                for section_obj in output[day]:
-                    sec = section_obj["section"]
-                    for slot in ALL_SLOTS:
-                        cell_entries = section_obj[slot]
-                        if not cell_entries:
-                            master_df.at[sec, slot] = ""
-                        else:
-                            # join multiple entries with separator
-                            lines = []
-                            for e in cell_entries:
-                                subj = e["subject"]
-                                teacher = e["teacher"]
-                                room = e["room"]
-                                group = e.get("group")
-                                text = f"{subj}"
-                                if group:
-                                    text += f" (Grp {group})"
-                                text += f"\n({teacher})\n{room}"
-                                lines.append(text)
-                            master_df.at[sec, slot] = "\n---\n".join(lines)
-                master_df.to_excel(writer, sheet_name=day)
-        print(f"✅ Excel exported to {excel_path}")
-
-        # apply formatting
-        try:
-            from openpyxl import load_workbook
-            from openpyxl.styles import Font, Alignment, Border, Side
-            wb = load_workbook(excel_path)
-            thin = Border(left=Side(style='thin'), right=Side(style='thin'), top=Side(style='thin'), bottom=Side(style='thin'))
-            for ws in wb.worksheets:
-                ws.column_dimensions['A'].width = 15
-                for col in ws.iter_cols(min_col=2, max_col=ws.max_column):
-                    ws.column_dimensions[col[0].column_letter].width = 25
-                for row in ws.iter_rows():
-                    ws.row_dimensions[row[0].row].height = 60
-                    for cell in row:
-                        cell.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
-                        cell.border = thin
-                        if cell.row == 1 or cell.column == 1:
-                            cell.font = Font(bold=True)
-            wb.save(excel_path)
-            print("✅ Excel formatting applied.")
-        except Exception as e:
-            print("⚠️ Could not apply Excel formatting:", e)
 
 else:
     print("❌ No feasible solution found.")

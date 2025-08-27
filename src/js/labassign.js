@@ -14,8 +14,8 @@ function areClassesEqual(class1, class2) {
 
 try {
     // --- 1. READ AND PREPARE DATA ---
-    const inputFilename = 'University_Master_Timetable.json';
-    const outputFilename = 'timetable.json';
+    const inputFilename = 'src/output/University_Master_Timetable.json';
+    const outputFilename = 'src/output/timetable.json';
     
     if (!fs.existsSync(inputFilename)) {
         console.error(`Error: The input file "${inputFilename}" was not found.`);

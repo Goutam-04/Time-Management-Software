@@ -1,14 +1,22 @@
 @echo off
-ECHO Step 1: Running table.py to generate the master timetable...
-python table.py
+echo Step 1: Running table.py for ~15s...
+start "" /b python src\python\table.py
+set PID=%!%
 
-ECHO Step 2: Running labassign.js to assign labs...
-node labassign.js
+:: Wait ~15 seconds
+ping -n 16 127.0.0.1 >nul
 
-ECHO Step 3: Running timetable_resolve.js to fix conflicts...
-node timetable_resolve.js
+:: Kill python process
+taskkill /im python.exe /f >nul 2>&1
 
-ECHO Step 4: Running json2pdf.js to convert JSON to PDF...
-node json2pdf.js
+echo Step 2: Running labassign.js...
+node src\js\labassign.js
 
-ECHO All steps completed! The final file is timetable_resolved.json
+echo Step 3: Running timetable_resolve.js...
+node src\js\timetable_resolve.js
+
+echo Step 4: Running json2pdf.js...
+node src\js\json2pdf.js
+
+echo All steps completed! The final files are in src\output and src\ (PDF)
+pause

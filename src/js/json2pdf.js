@@ -12,7 +12,7 @@ const fonts = {
 };
 const printer = new PdfPrinter(fonts);
 
-const timetable = JSON.parse(fs.readFileSync("timetable_resolved.json", "utf8"));
+const timetable = JSON.parse(fs.readFileSync("src/output/timetable_resolved.json", "utf8"));
 const timeSlots = ["9-10", "10-11", "11-12", "12-1", "2-3", "3-4", "4-5"];
 
 /**
@@ -163,7 +163,7 @@ function makeDocument() {
 }
 
 const pdfDoc = printer.createPdfKitDocument(makeDocument());
-pdfDoc.pipe(fs.createWriteStream("Timetable.pdf"));
+pdfDoc.pipe(fs.createWriteStream("src/output/Timetable.pdf"));
 pdfDoc.end();
 
 console.log("✅ Timetable PDF generated with merged labs and parallel dividers!");

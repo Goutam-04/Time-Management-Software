@@ -97,8 +97,8 @@ function performMove(labToMove, oldSlotStart, newSlotStart, dailySchedule) {
 
 // --- Main Execution ---
 try {
-    const inputFilename = 'timetable.json';
-    const outputFilename = 'timetable_resolved.json';
+    const inputFilename = 'src/output/timetable.json';
+    const outputFilename = 'src/output/timetable_resolved.json';
 
     const timetableData = fs.readFileSync(inputFilename, 'utf8');
     const resolvedTimetable = JSON.parse(timetableData);
