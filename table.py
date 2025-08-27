@@ -39,7 +39,7 @@ SUBJECTS = {
     'AIML-3':  [('DLD', 'PKS'), ('DS', 'SKS'), ('DBE', 'GF4'), ('OOP', 'SKB')],
     'CSE-5':   [('TOC', 'GF2'), ('OS', 'HSB'), ('AI/ML', 'PKD'), ('CNS', 'SPanda')],
     'IT-5':    [('TOC', 'KKS'), ('OS', 'SBD'), ('AI/ML', 'GF3'), ('DMDW', 'BN')],
-    'CSE-7':   [('AI', 'GF5'), ('IWP', 'GF6'), ('IP', 'KN')],
+    'CSE-7':   [('AI', 'GF5'), ('IWP', 'GF6'), ('IP', 'KN'),('SM', 'SPS')],
     'IT-7':    [('AI', 'MRS'), ('CS', 'AD'), ('SM', 'SKN')]
 }
 
@@ -49,13 +49,13 @@ LABS = {
     'AIML-3':  ['DLD Lab', 'DS Lab', 'DBE Lab', 'OOP Lab'],
     'CSE-5':   ['TOC Lab', 'OS Lab', 'AI/ML Lab'],
     'IT-5':    ['TOC Lab', 'OS Lab', 'AI/ML Lab'],
-    'CSE-7':   ['Web Programming Lab'],
-    'IT-7':    ['Artificial Intelligence Lab']
+    'CSE-7':   ['Web Programming Lab','Seminar Lab'],
+    'IT-7':    ['Artificial Intelligence Lab','Seminar Lab']
 }
 
 # helper to derive teacher for a lab from subject mapping
 def get_teacher_for_lab(section, lab_name):
-    subject_name_map = {'Web Programming Lab': 'IWP', 'Artificial Intelligence Lab': 'AI'}
+    subject_name_map = {'Web Programming Lab': 'IWP', 'Artificial Intelligence Lab': 'AI', 'Seminar Lab': 'SM'}
     subject_name = subject_name_map.get(lab_name, lab_name.replace(' Lab', ''))
     for subject, teacher in SUBJECTS.get(section, []):
         if subject == subject_name:
