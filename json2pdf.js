@@ -12,7 +12,8 @@ const fonts = {
 };
 const printer = new PdfPrinter(fonts);
 
-const timetable = JSON.parse(fs.readFileSync("University_Master_Timetable.json", "utf8"));
+// const timetable = JSON.parse(fs.readFileSync("University_Master_Timetable.json", "utf8"));
+const timetable = JSON.parse(fs.readFileSync("timetable.json", "utf8"));
 const timeSlots = ["9-10", "10-11", "11-12", "12-1", "2-3", "3-4", "4-5"];
 
 // Build table for one day

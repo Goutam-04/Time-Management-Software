@@ -53,7 +53,7 @@ LABS = {
     'IT-7':    ['Artificial Intelligence Lab']
 }
 
-# map lab name to corresponding theory subject code where needed
+# helper to derive teacher for a lab from subject mapping
 def get_teacher_for_lab(section, lab_name):
     subject_name_map = {'Web Programming Lab': 'IWP', 'Artificial Intelligence Lab': 'AI'}
     subject_name = subject_name_map.get(lab_name, lab_name.replace(' Lab', ''))
@@ -64,6 +64,9 @@ def get_teacher_for_lab(section, lab_name):
 
 ALL_TEACHERS = sorted(list(set(teacher for section_subjects in SUBJECTS.values() for _, teacher in section_subjects)))
 ALL_ROOMS = sorted(list(set(SECTION_THEORY_ROOM.values()) | set(LAB_ROOMS)))
+
+# gather unique lab names across all sections
+LAB_NAMES = sorted(list({lab for labs in LABS.values() for lab in labs}))
 
 # ----------------------------
 # BUILD CP-SAT MODEL
@@ -100,7 +103,33 @@ for section in LABS:
                         class_vars[(section, group, lab_name, teacher, day_idx, slot_idx, room)] = model.NewBoolVar(name)
 
 # ----------------------------
-# HARD CONSTRAINTS
+# NEW: room-choice variables per lab subject
+# For each lab_name we force solver to pick exactly one lab room for that lab subject.
+# Then any lab class assigned for that lab must imply the chosen lab_room variable.
+# ----------------------------
+lab_room_choice = {}
+for lab_name in LAB_NAMES:
+    for room in LAB_ROOMS:
+        v = model.NewBoolVar(f"lab_room_choice__{lab_name.replace(' ','_')}_{room}")
+        lab_room_choice[(lab_name, room)] = v
+    # exactly one room must be selected for this lab subject
+    model.Add(sum(lab_room_choice[(lab_name, room)] for room in LAB_ROOMS) == 1)
+
+# After creating class_vars we must link lab class vars to the lab_room_choice
+# We will add implications var -> lab_room_choice[(lab_name, room)]
+for (sec, grp, subj, tc, d, s, rm), var in list(class_vars.items()):
+    if 'Lab' in subj:
+        # subj is the lab name, rm is the room encoded in variable key
+        # ensure that if var is true then the global choice for this lab_name equals rm
+        if (subj, rm) in lab_room_choice:
+            # add implication: var => lab_room_choice[(subj, rm)]
+            model.AddImplication(var, lab_room_choice[(subj, rm)])
+        else:
+            # If subj found in LAB_NAMES but rm not in LAB_ROOMS (shouldn't happen), skip
+            pass
+
+# ----------------------------
+# HARD CONSTRAINTS (existing)
 # ----------------------------
 
 # 1) A room can have only one class active at a time
@@ -175,8 +204,6 @@ for section, section_subjects in SUBJECTS.items():
         model.Add(sum(vars_for_subject) == 3)
 
 # 5) Each lab for each group should be scheduled exactly once a week (this preserves lab counts)
-#    NOTE: we keep exactly-one-per-week per lab per group as before, but since variables include room choices,
-#    the solver may set one of the room-variants to true. This still allows labs for group A and B to occur simultaneously (different rooms).
 for section, section_labs in LABS.items():
     for lab_name in section_labs:
         for group in GROUPS:
@@ -187,7 +214,7 @@ for section, section_labs in LABS.items():
             if vars_for_lab_group:
                 model.Add(sum(vars_for_lab_group) == 1)
 
-# 6) Recess rule: if teacher teaches 12-1 they cannot teach 2-3 same day (i.e., no 12-1 and 2-3)
+# 6) Recess rule: if teacher teaches 12-1 they cannot teach 2-3 same day
 slot_12_1_idx = ALL_SLOTS.index("12-1")
 slot_2_3_idx = ALL_SLOTS.index("2-3")
 for teacher in ALL_TEACHERS:
@@ -235,7 +262,7 @@ for section in SECTIONS:
         ]
         model.Add(sum(daily_theory) <= 4)
 
-# 8) NEW HARD RULE: For each section & group, max 2 labs per day (1 preferred, 2 allowed worst-case)
+# 8) For each section & group, max 2 labs per day (1 preferred, 2 allowed worst-case)
 for section in SECTIONS:
     if section not in LABS:
         continue
@@ -246,7 +273,6 @@ for section in SECTIONS:
                 if sec == section and grp == group and d == day_idx and 'Lab' in subj
             ]
             if labs_for_group_day:
-                # Hard limit: at most 2 labs per day for this section-group
                 model.Add(sum(labs_for_group_day) <= 2)
 
 # ----------------------------
@@ -290,7 +316,7 @@ for section in SECTIONS:
             model.Add(is_theory_scheduled[i] == is_theory_scheduled[i+1]).OnlyEnforceIf(trans.Not())
             continuity_penalties.append(trans)
 
-# 3) Prefer parallel labs (if both groups run labs in same slot) — reward balanced group labs
+# 3) Prefer parallel labs (reward balanced group labs)
 parallel_lab_penalties = []
 for section in SECTIONS:
     if section not in LABS:
@@ -319,13 +345,12 @@ for section in SECTIONS:
                 model.Add(sum(group_b_labs) == 0).OnlyEnforceIf(gB.Not())
 
             if gA is not None and gB is not None:
-                # penalty variable = 1 when unbalanced (one group has lab and other doesn't)
                 unbalanced = model.NewBoolVar(f"unbal_{section}_{day_idx}_{slot_idx}")
                 model.Add(gA != gB).OnlyEnforceIf(unbalanced)
                 model.Add(gA == gB).OnlyEnforceIf(unbalanced.Not())
                 parallel_lab_penalties.append(unbalanced)
 
-# 4) Prefer one lab per day per group (soft). If >1, allowed but penalized. Hard constraint above caps at 2.
+# 4) Prefer one lab per day per group (soft)
 group_daily_lab_penalties = []
 for section in SECTIONS:
     if section not in LABS:
@@ -338,7 +363,6 @@ for section in SECTIONS:
             ]
             if not labs_for_group_day:
                 continue
-            # penalty var = max(0, sum(labs_for_group_day) - 1)
             pv = model.NewIntVar(0, len(LAB_SLOT_STARTS), f"group_lab_pen_{section}_{group}_{day_idx}")
             model.Add(pv >= sum(labs_for_group_day) - 1)
             group_daily_lab_penalties.append(pv)
@@ -366,12 +390,12 @@ for section in SECTIONS:
             model.Add(pv >= sum(lab_session_helpers) - 1)
             daily_lab_penalties.append(pv)
 
-# Combine objective weights (adjusted to prefer parallel labs and penalize extra group labs)
+# Combine objective weights
 WORKLOAD_PENALTY_WEIGHT = 10
-PARALLEL_LAB_PENALTY_WEIGHT = 8   # increased to strongly prefer parallel labs when possible
+PARALLEL_LAB_PENALTY_WEIGHT = 8
 DAILY_LAB_PENALTY_WEIGHT = 3
 CONTINUITY_PENALTY_WEIGHT = 1
-GROUP_DAILY_LAB_PENALTY_WEIGHT = 6  # penalize more when a group has >1 lab in a day
+GROUP_DAILY_LAB_PENALTY_WEIGHT = 6
 
 total_workload_penalty = sum(max_daily_load_vars)
 total_continuity_penalty = sum(continuity_penalties)
@@ -391,8 +415,7 @@ model.Minimize(
 # SOLVE & EXPORT JSON (and Excel optionally)
 # ----------------------------
 solver = cp_model.CpSolver()
-solver.parameters.max_time_in_seconds = 180.0  # increased time a bit for harder model
-# solver.parameters.num_search_workers = 8  # you can enable if your machine has cores
+solver.parameters.max_time_in_seconds = 180.0  # increase if needed
 status = solver.Solve(model)
 
 def make_entry(subj, teacher, room, is_lab, group=None):

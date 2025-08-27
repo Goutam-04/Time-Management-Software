@@ -1,0 +1,56 @@
+{
+  "Monday": [
+    {
+      "section": "CSE-3-1",
+      "9-10": [
+        {
+          "teacher": "AM",
+          "subject": "DLD Lab",
+          "room": "CS107",
+          "isLab": true,
+          "group": "B"
+        },{
+          "teacher": "SK",
+          "subject": "DS Lab",
+          "room": "CS106",
+          "isLab": true,
+          "group": "A"
+        }
+      ],
+      "10-11": [
+        {
+          "teacher": "AM",
+          "subject": "DLD Lab",
+          "room": "CS107",
+          "isLab": true,
+          "group": "B"
+        },{
+          "teacher": "SK",
+          "subject": "DS Lab",
+          "room": "CS106",
+          "isLab": true,
+          "group": "A"
+        }
+      ],
+      "11-12": [],
+      "12-1": [],
+      "2-3": [],
+      "3-4": [
+        {
+          "teacher": "AVL",
+          "subject": "OOP",
+          "room": "B-209",
+          "isLab": false
+        }
+      ],
+      "4-5": [
+        {
+          "teacher": "SP",
+          "subject": "DBE",
+          "room": "B-209",
+          "isLab": false
+        }
+      ]
+    },
+    {
+      "section": "CSE-3-2",
