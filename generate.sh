@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo "Step 1: Running table.py for ~15s..."
-python3 src/python/table.py &
-pid=$!
-sleep 15
-kill -INT $pid 2>/dev/null
-wait $pid 2>/dev/null
+echo "Step 1: Running main.py..."
+python3 src/python/main.py
+# pid=$!
+# sleep 15
+# kill -INT $pid 2>/dev/null
+# wait $pid 2>/dev/null
 
 echo "Step 2: Running labassign.js..."
 node src/js/labassign.js

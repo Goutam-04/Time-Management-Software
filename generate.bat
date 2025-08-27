@@ -1,13 +1,7 @@
 @echo off
-echo Step 1: Running table.py for ~15s...
-start "" /b python src\python\table.py
-set PID=%!%
+echo Step 1: Running main.py...
+python src\python\main.py
 
-:: Wait ~15 seconds
-ping -n 16 127.0.0.1 >nul
-
-:: Kill python process
-taskkill /im python.exe /f >nul 2>&1
 
 echo Step 2: Running labassign.js...
 node src\js\labassign.js
