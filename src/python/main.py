@@ -24,7 +24,7 @@ def main():
     constraints.add_hard_constraints(model, class_vars, config)
     print("   - Hard constraints added.")
 
-    # 4. Set the objective function
+    # 4. Set the objective function (pass class_vars + config properly)
     objective.set_objective(model, class_vars, config)
     print("   - Objective function set.")
 

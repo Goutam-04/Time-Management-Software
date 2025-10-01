@@ -1,0 +1,42 @@
+{
+  "settings": {
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "all_slots": [
+      "9-10",
+      "10-11",
+      "11-12",
+      "12-1",
+      "2-3",
+      "3-4",
+      "4-5"
+    ],
+    "lab_slot_starts": [
+      "9-10",
+      "11-12",
+      "3-4"
+    ],
+    "groups": [
+      "A",
+      "B"
+    ],
+    "solver_timeout_seconds": 180
+  },
+  "sections": [],
+  "section_theory_rooms": {},
+  "lab_rooms": [],
+  "subjects": {},
+  "labs": {},
+  "objective_weights": {
+    "workload_penalty": 10,
+    "parallel_lab_penalty": 8,
+    "daily_lab_penalty": 3,
+    "continuity_penalty": 1,
+    "group_daily_lab_penalty": 6
+  }
+}
