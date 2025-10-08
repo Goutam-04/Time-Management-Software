@@ -33,7 +33,7 @@ def set_objective(model, class_vars, config):
                 model.Add(is_theory_i == is_theory_i1).OnlyEnforceIf(transition.Not())
                 penalties.append(transition * config.WEIGHTS['continuity_penalty'])
 
-    # 3. Prefer parallel labs
+    # 3. Prefer parallel labs (RE-ADDED AS A SOFT PENALTY)
     for section in config.SECTIONS:
         for day_idx in range(len(config.DAYS)):
             for slot_idx, slot in enumerate(config.ALL_SLOTS):
@@ -44,9 +44,9 @@ def set_objective(model, class_vars, config):
                 gB_active = model.NewBoolVar('')
                 
                 sum_gA = sum(v for (sec, grp, subj, tc, d, s, rm), v in class_vars.items() 
-                             if sec == section and grp == 'A' and d == day_idx and s == slot_idx)
+                             if sec == section and grp == 'A' and d == day_idx and s == slot_idx and 'Lab' in subj)
                 sum_gB = sum(v for (sec, grp, subj, tc, d, s, rm), v in class_vars.items() 
-                             if sec == section and grp == 'B' and d == day_idx and s == slot_idx)
+                             if sec == section and grp == 'B' and d == day_idx and s == slot_idx and 'Lab' in subj)
 
                 model.Add(sum_gA > 0).OnlyEnforceIf(gA_active)
                 model.Add(sum_gA == 0).OnlyEnforceIf(gA_active.Not())
@@ -68,7 +68,7 @@ def set_objective(model, class_vars, config):
                     continue
                 session_active = model.NewBoolVar('')
                 sum_labs = sum(v for (sec, grp, subj, tc, d, s, rm), v in class_vars.items() 
-                               if sec == section and d == day_idx and s == slot_idx)
+                               if sec == section and d == day_idx and s == slot_idx and 'Lab' in subj)
                 model.Add(sum_labs > 0).OnlyEnforceIf(session_active)
                 model.Add(sum_labs == 0).OnlyEnforceIf(session_active.Not())
                 section_lab_sessions.append(session_active)
@@ -80,10 +80,11 @@ def set_objective(model, class_vars, config):
             # Group penalty
             for group in config.GROUPS:
                 group_labs_today = sum(v for (sec, grp, subj, tc, d, s, rm), v in class_vars.items() 
-                                       if sec == section and grp == group and d == day_idx)
+                                       if sec == section and grp == group and d == day_idx and 'Lab' in subj)
                 group_penalty = model.NewIntVar(0, 5, '')
                 model.Add(group_penalty >= group_labs_today - 1)
                 penalties.append(group_penalty * config.WEIGHTS['group_daily_lab_penalty'])
     
     # Final optimization objective
     model.Minimize(sum(penalties))
+

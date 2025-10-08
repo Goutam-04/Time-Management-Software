@@ -34,7 +34,7 @@ class Config:
                 return teacher
         return None
 
-def load_config(filepath="src/python/config.json"):
+def load_config(filepath="config.json"):
     """Loads the configuration from a JSON file and returns a Config object."""
     with open(filepath, 'r') as f:
         data = json.load(f)
