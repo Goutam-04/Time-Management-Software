@@ -1,11 +1,5 @@
 # main.py
 from ortools.sat.python import cp_model
-import sys
-import os
-
-# Add the source directory to the Python path to ensure modules are found
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__))))
-
 import config_loader
 import model_builder
 import constraints
@@ -16,9 +10,8 @@ def main():
     """Main function to generate the timetable."""
     print("🚀 Starting timetable generation process...")
 
-    # 1. Load configuration from JSON using a relative path from the project root
-    config_path = os.path.join(os.path.dirname(__file__), "config.json")
-    config = config_loader.load_config(config_path)
+    # 1. Load configuration from JSON
+    config = config_loader.load_config("src/python/config.json")
     print("   - Configuration loaded from config.json.")
 
     # 2. Create the model and variables
@@ -31,7 +24,7 @@ def main():
     constraints.add_hard_constraints(model, class_vars, config)
     print("   - Hard constraints added.")
 
-    # 4. Set the objective function
+    # 4. Set the objective function (pass class_vars + config properly)
     objective.set_objective(model, class_vars, config)
     print("   - Objective function set.")
 
@@ -47,4 +40,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

@@ -32,7 +32,8 @@ def export_solution(status, solver, class_vars, config):
                 day_list.append(section_obj)
             output[day] = day_list
         
-        json_path = "University_Master_Timetable.json"
+        # NOTE: Update this path to your desired output location
+        json_path = "src/output/University_Master_Timetable.json"
         with open(json_path, "w", encoding="utf-8") as jf:
             json.dump(output, jf, indent=2, ensure_ascii=False)
         print(f"✅ JSON exported to {json_path}")
