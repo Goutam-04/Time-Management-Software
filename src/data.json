@@ -32,33 +32,33 @@
     },
     {
       "section": "CSE-5",
-      "9-10": [ { "status": "To Be Assigned" } ],
-      "10-11": [ { "status": "Assigned", "room": "B205", "subject": "ISE", "teacher": "ISE_TBD" } ],
-      "11-12": [ { "status": "To Be Assigned" } ],
-      "12-1": [ { "status": "To Be Assigned" } ],
-      "2-3": [ { "status": "To Be Assigned" } ],
-      "3-4": [ { "status": "Assigned", "room": "B205", "subject": "ED", "teacher": null } ],
+      "9-10": [ { "status": "Assigned", "room": "B-205", "subject": "ISE", "teacher": "ISE_TBD" } ],
+      "10-11": [ { "status": "To Be Assigned" } ],
+      "11-12": [ { "status": "Free" } ],
+      "12-1": [ { "status": "Free" } ], 
+      "2-3": [ { "status": "Assigned", "room": "B-205", "subject": "ED", "teacher": "ED_TBD" } ],
+      "3-4": [ { "status": "Assigned", "room": "B-205", "subject": "ED", "teacher": "ED_TBD"} ],
       "4-5": [ { "status": "To Be Assigned" } ]
     },
     {
       "section": "CSE-AI-ML-5",
-      "9-10": [ { "status": "To Be Assigned" } ],
+      "9-10": [ { "status": "Free" } ],
       "10-11": [ { "status": "Free" } ],
       "11-12": [ { "status": "To Be Assigned" } ],
-      "12-1": [ { "status": "Free" } ],
+      "12-1": [ { "status": "To Be Assigned" } ],
       "2-3": [ { "status": "Free" } ],
-      "3-4": [ { "status": "To Be Assigned" } ],
-      "4-5": [ { "status": "To Be Assigned" } ]
+      "3-4": [ { "status": "Free" } ],
+      "4-5": [ { "status": "Free" } ]
     },
     {
       "section": "CSE-7",
       "9-10": [ { "status": "To Be Assigned" } ],
       "10-11": [ { "status": "To Be Assigned" } ],
       "11-12": [ { "status": "To Be Assigned" } ],
-      "12-1": [ { "status": "To Be Assigned" } ],
-      "2-3": [ { "status": "To Be Assigned" } ],
-      "3-4": [ { "status": "To Be Assigned" } ],
-      "4-5": [ { "status": "To Be Assigned" } ]
+      "12-1": [ { "status": "Free" } ],
+      "2-3": [ { "status": "Free" } ],
+      "3-4": [ { "status": "Free" } ],
+      "4-5": [ { "status": "Free" } ]
     },
     {
       "section": "IT-7",
@@ -66,7 +66,7 @@
       "10-11": [ { "status": "Free" } ],
       "11-12": [ { "status": "Free" } ],
       "12-1": [ { "status": "Free" } ],
-      "2-3": [ { "status": "To Be Assigned" } ],
+      "2-3": [ { "status": "Free" } ],
       "3-4": [ { "status": "To Be Assigned" } ],
       "4-5": [ { "status": "To Be Assigned" } ]
     }
@@ -106,29 +106,29 @@
       "section": "CSE-5",
       "9-10": [ { "status": "To Be Assigned" } ],
       "10-11": [ { "status": "To Be Assigned" } ],
-      "11-12": [ { "status": "To Be Assigned" } ],
-      "12-1": [ { "status": "To Be Assigned" } ],
-      "2-3": [ { "status": "To Be Assigned" } ],
-      "3-4": [ { "status": "To Be Assigned" } ],
-      "4-5": [ { "status": "Assigned", "room": "B205", "subject": "ISE", "teacher": "ISE_TBD" } ]
+      "11-12": [ { "status": "Free" } ],
+      "12-1": [ { "status": "Free" } ],
+      "2-3": [ { "status": "Free" } ],
+      "3-4": [ { "status": "Assigned", "room": "B-205", "subject": "ISE", "teacher": "ISE_TBD" } ],
+      "4-5": [ { "status": "Assigned", "room": "B-205", "subject": "ISE", "teacher": "ISE_TBD" } ]
     },
     {
       "section": "CSE-AI-ML-5",
-      "9-10": [ { "status": "To Be Assigned" } ],
-      "10-11": [ { "status": "To Be Assigned" } ],
+      "9-10": [ { "status": "Free" } ],
+      "10-11": [ { "status": "Free" } ],
       "11-12": [ { "status": "To Be Assigned" } ],
-      "12-1": [ { "status": "Free" } ],
-      "2-3": [ { "status": "To Be Assigned" } ],
-      "3-4": [ { "status": "To Be Assigned" } ],
+      "12-1": [ { "status": "To Be Assigned" } ],
+      "2-3": [ { "status": "Assigned", "room": "B-205", "subject": "ED", "teacher": "ED_TBD"} ],
+      "3-4": [ { "status": "Free" } ],
       "4-5": [ { "status": "Free" } ]
     },
     {
       "section": "CSE-7",
-      "9-10": [ { "status": "To Be Assigned" } ],
-      "10-11": [ { "status": "To Be Assigned" } ],
-      "11-12": [ { "status": "To Be Assigned" } ],
-      "12-1": [ { "status": "To Be Assigned" } ],
-      "2-3": [ { "status": "To Be Assigned" } ],
+      "9-10": [ { "status": "Free" } ],
+      "10-11": [ { "status": "Free" } ],
+      "11-12": [ { "status": "Free" } ],
+      "12-1": [ { "status": "Free" } ],
+      "2-3": [ { "status": "Free" } ],
       "3-4": [ { "status": "To Be Assigned" } ],
       "4-5": [ { "status": "To Be Assigned" } ]
     },
@@ -138,9 +138,9 @@
       "10-11": [ { "status": "Free" } ],
       "11-12": [ { "status": "Free" } ],
       "12-1": [ { "status": "Free" } ],
-      "2-3": [ { "status": "To Be Assigned" } ],
-      "3-4": [ { "status": "To Be Assigned" } ],
-      "4-5": [ { "status": "To Be Assigned" } ]
+      "2-3": [ { "status": "Free" } ],
+      "3-4": [ { "status": "Free" } ],
+      "4-5": [ { "status": "Free" } ]
     }
   ],
   "Wednesday": [
@@ -178,38 +178,38 @@
       "section": "CSE-5",
       "9-10": [ { "status": "To Be Assigned" } ],
       "10-11": [ { "status": "To Be Assigned" } ],
-      "11-12": [ { "status": "To Be Assigned" } ],
-      "12-1": [ { "status": "To Be Assigned" } ],
-      "2-3": [ { "status": "To Be Assigned" } ],
-      "3-4": [ { "status": "To Be Assigned" } ],
-      "4-5": [ { "status": "To Be Assigned" } ]
-    },
-    {
-      "section": "CSE-AI-ML-5",
-      "9-10": [ { "status": "To Be Assigned" } ],
-      "10-11": [ { "status": "To Be Assigned" } ],
-      "11-12": [ { "status": "To Be Assigned" } ],
+      "11-12": [ { "status": "Free" } ],
       "12-1": [ { "status": "Free" } ],
       "2-3": [ { "status": "Free" } ],
       "3-4": [ { "status": "Free" } ],
-      "4-5": [ { "status": "To Be Assigned" } ]
+      "4-5": [ { "status": "Free" } ]
+    },
+    {
+      "section": "CSE-AI-ML-5",
+      "9-10": [ { "status": "Free" } ],
+      "10-11": [ { "status": "Free" } ],
+      "11-12": [ { "status": "To Be Assigned" } ],
+      "12-1": [ { "status": "To Be Assigned" } ],
+      "2-3": [ { "status": "Free" } ],
+      "3-4": [ { "status": "Assigned", "room": "B-205", "subject": "ISE", "teacher": "ISE_TBD" } ],
+      "4-5": [ { "status": "Assigned", "room": "B-205", "subject": "ISE", "teacher": "ISE_TBD" } ]
     },
     {
       "section": "CSE-7",
       "9-10": [ { "status": "To Be Assigned" } ],
       "10-11": [ { "status": "To Be Assigned" } ],
-      "11-12": [ { "status": "To Be Assigned" } ],
-      "12-1": [ { "status": "To Be Assigned" } ],
-      "2-3": [ { "status": "To Be Assigned" } ],
-      "3-4": [ { "status": "To Be Assigned" } ],
-      "4-5": [ { "status": "To Be Assigned" } ]
+      "11-12": [ { "status": "Free" } ],
+      "12-1": [ { "status": "Free" } ],
+      "2-3": [ { "status": "Free" } ],
+      "3-4": [ { "status": "Free" } ],
+      "4-5": [ { "status": "Free" } ]
     },
     {
       "section": "IT-7",
       "9-10": [ { "status": "Free" } ],
       "10-11": [ { "status": "Free" } ],
-      "11-12": [ { "status": "Free" } ],
-      "12-1": [ { "status": "Free" } ],
+      "11-12": [ { "status": "To Be Assigned" } ],
+      "12-1": [ { "status": "To Be Assigned" } ],
       "2-3": [ { "status": "Free" } ],
       "3-4": [ { "status": "Free" } ],
       "4-5": [ { "status": "Free" } ]
@@ -252,34 +252,34 @@
       "10-11": [ { "status": "To Be Assigned" } ],
       "11-12": [ { "status": "To Be Assigned" } ],
       "12-1": [ { "status": "To Be Assigned" } ],
-      "2-3": [ { "status": "To Be Assigned" } ],
-      "3-4": [ { "status": "To Be Assigned" } ],
+      "2-3": [ { "status": "Free" } ],
+      "3-4": [ { "status": "Free" } ],
       "4-5": [ { "status": "Free" } ]
     },
     {
       "section": "CSE-AI-ML-5",
-      "9-10": [ { "status": "To Be Assigned" } ],
-      "10-11": [ { "status": "To Be Assigned" } ],
-      "11-12": [ { "status": "To Be Assigned" } ],
-      "12-1": [ { "status": "To Be Assigned" } ],
+      "9-10": [ { "status": "Free" } ],
+      "10-11": [ { "status": "Free" } ],
+      "11-12": [ { "status": "Free" } ],
+      "12-1": [ { "status": "Free" } ],
       "2-3": [ { "status": "To Be Assigned" } ],
       "3-4": [ { "status": "To Be Assigned" } ],
-      "4-5": [ { "status": "Assigned", "room": "B 205", "subject": "ISE", "teacher": "ISE_TBD" } ]
+      "4-5": [ { "status": "Assigned", "room": "B-205", "subject": "ISE", "teacher": "ISE_TBD" } ]
     },
     {
       "section": "CSE-7",
-      "9-10": [ { "status": "To Be Assigned" } ],
-      "10-11": [ { "status": "To Be Assigned" } ],
-      "11-12": [ { "status": "To Be Assigned" } ],
-      "12-1": [ { "status": "To Be Assigned" } ],
+      "9-10": [ { "status": "Free" } ],
+      "10-11": [ { "status": "Free" } ],
+      "11-12": [ { "status": "Free" } ],
+      "12-1": [ { "status": "Free" } ],
       "2-3": [ { "status": "To Be Assigned" } ],
       "3-4": [ { "status": "To Be Assigned" } ],
       "4-5": [ { "status": "To Be Assigned" } ]
     },
     {
       "section": "IT-7",
-      "9-10": [ { "status": "Free" } ],
-      "10-11": [ { "status": "Free" } ],
+      "9-10": [ { "status": "To Be Assigned" } ],
+      "10-11": [ { "status": "To Be Assigned" } ],
       "11-12": [ { "status": "Free" } ],
       "12-1": [ { "status": "Free" } ],
       "2-3": [ { "status": "Free" } ],
@@ -320,33 +320,33 @@
     },
     {
       "section": "CSE-5",
-      "9-10": [ { "status": "To Be Assigned" } ],
-      "10-11": [ { "status": "To Be Assigned" } ],
+      "9-10": [ { "status": "Free" } ],
+      "10-11": [ { "status": "Free" } ],
       "11-12": [ { "status": "To Be Assigned" } ],
       "12-1": [ { "status": "To Be Assigned" } ],
-      "2-3": [ { "status": "Assigned", "room": "B111", "subject": "ED", "teacher": null } ],
-      "3-4": [ { "status": "To Be Assigned" } ],
-      "4-5": [ { "status": "To Be Assigned" } ]
+      "2-3": [ { "status": "Assigned", "room": "B-205", "subject": "ED", "teacher": "ED_TBD"} ],
+      "3-4": [ { "status": "Free" } ],
+      "4-5": [ { "status": "Free" } ]
     },
     {
       "section": "CSE-AI-ML-5",
       "9-10": [ { "status": "To Be Assigned" } ],
       "10-11": [ { "status": "To Be Assigned" } ],
-      "11-12": [ { "status": "To Be Assigned" } ],
-      "12-1": [ { "status": "To Be Assigned" } ],
-      "2-3": [ { "status": "Assigned", "room": "B205", "subject": "ED", "teacher": "ED_TBD" } ],
+      "11-12": [ { "status": "Free" } ],
+      "12-1": [ { "status": "Free" } ],
+      "2-3": [ { "status": "Free" } ],
       "3-4": [ { "status": "To Be Assigned" } ],
       "4-5": [ { "status": "To Be Assigned" } ]
     },
     {
       "section": "CSE-7",
-      "9-10": [ { "status": "To Be Assigned" } ],
-      "10-11": [ { "status": "To Be Assigned" } ],
+      "9-10": [ { "status": "Free" } ],
+      "10-11": [ { "status": "Free" } ],
       "11-12": [ { "status": "To Be Assigned" } ],
       "12-1": [ { "status": "To Be Assigned" } ],
-      "2-3": [ { "status": "To Be Assigned" } ],
-      "3-4": [ { "status": "To Be Assigned" } ],
-      "4-5": [ { "status": "To Be Assigned" } ]
+      "2-3": [ { "status": "Free" } ],
+      "3-4": [ { "status": "Free" } ],
+      "4-5": [ { "status": "Free" } ]
     },
     {
       "section": "IT-7",
@@ -354,9 +354,9 @@
       "10-11": [ { "status": "Free" } ],
       "11-12": [ { "status": "Free" } ],
       "12-1": [ { "status": "Free" } ],
-      "2-3": [ { "status": "Free" } ],
-      "3-4": [ { "status": "Free" } ],
-      "4-5": [ { "status": "Free" } ]
+      "2-3": [ { "status": "To Be Assigned" } ],
+      "3-4": [ { "status": "To Be Assigned" } ],
+      "4-5": [ { "status": "To Be Assigned" } ]
     }
   ]
 }

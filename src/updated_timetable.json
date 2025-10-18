@@ -157,43 +157,52 @@
       "section": "CSE-5",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "room": "B-205",
+          "subject": "ISE",
+          "teacher": "ISE_TBD"
         }
       ],
       "10-11": [
         {
           "status": "Assigned",
-          "room": "B205",
-          "subject": "ISE",
-          "teacher": "ISE_TBD"
+          "subject": "AI/ML",
+          "teacher": "PKD",
+          "room": "B-205"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "12-1": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "2-3": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "room": "B-205",
+          "subject": "ED",
+          "teacher": "ED_TBD"
         }
       ],
       "3-4": [
         {
           "status": "Assigned",
-          "room": "B205",
+          "room": "B-205",
           "subject": "ED",
-          "teacher": null
+          "teacher": "ED_TBD"
         }
       ],
       "4-5": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "TOC",
+          "teacher": "GF2",
+          "room": "B-205"
         }
       ]
     },
@@ -201,22 +210,34 @@
       "section": "CSE-AI-ML-5",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "OS Lab (G-A) / AI/ML Lab (G-B)",
+          "teacher": "SBD / GF3",
+          "room": "CS107 / CS105"
         }
       ],
       "10-11": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "OS Lab (G-A) / AI/ML Lab (G-B)",
+          "teacher": "SBD / GF3",
+          "room": "CS107 / CS105"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "AI/ML",
+          "teacher": "GF3",
+          "room": "B-205"
         }
       ],
       "12-1": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "OS",
+          "teacher": "SBD",
+          "room": "B-205"
         }
       ],
       "2-3": [
@@ -226,12 +247,12 @@
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "4-5": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ]
     },
@@ -239,37 +260,46 @@
       "section": "CSE-7",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "AI",
+          "teacher": "GF_AI",
+          "room": "D-303"
         }
       ],
       "10-11": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "SM",
+          "teacher": "SPS",
+          "room": "D-303"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "IWP",
+          "teacher": "GF6",
+          "room": "D-303"
         }
       ],
       "12-1": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "2-3": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "4-5": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ]
     },
@@ -297,17 +327,23 @@
       ],
       "2-3": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "CS",
+          "teacher": "AD",
+          "room": "D-303"
         }
       ],
       "4-5": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "AI",
+          "teacher": "MRS",
+          "room": "D-303"
         }
       ]
     }
@@ -479,38 +515,47 @@
       "section": "CSE-5",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "TOC",
+          "teacher": "GF2",
+          "room": "B-205"
         }
       ],
       "10-11": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "OS",
+          "teacher": "HSB",
+          "room": "B-205"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "12-1": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "2-3": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "room": "B-205",
+          "subject": "ISE",
+          "teacher": "ISE_TBD"
         }
       ],
       "4-5": [
         {
           "status": "Assigned",
-          "room": "B205",
+          "room": "B-205",
           "subject": "ISE",
           "teacher": "ISE_TBD"
         }
@@ -520,37 +565,52 @@
       "section": "CSE-AI-ML-5",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "10-11": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "OS",
+          "teacher": "SBD",
+          "room": "B-205"
         }
       ],
       "12-1": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "AI/ML",
+          "teacher": "GF3",
+          "room": "B-205"
         }
       ],
       "2-3": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "room": "B-205",
+          "subject": "ED",
+          "teacher": "ED_TBD"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "AI/ML Lab (G-A) / TOC Lab (G-B)",
+          "teacher": "GF3 / KKS",
+          "room": "CS208 / CS105"
         }
       ],
       "4-5": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "AI/ML Lab (G-A) / TOC Lab (G-B)",
+          "teacher": "GF3 / KKS",
+          "room": "CS208 / CS105"
         }
       ]
     },
@@ -558,37 +618,49 @@
       "section": "CSE-7",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "IWP Lab (G-A) / SM Lab (G-B)",
+          "teacher": "GF6 / SPS",
+          "room": "CS204 / CS208"
         }
       ],
       "10-11": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "IWP Lab (G-A) / SM Lab (G-B)",
+          "teacher": "GF6 / SPS",
+          "room": "CS204 / CS208"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "12-1": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "2-3": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "AI",
+          "teacher": "GF_AI",
+          "room": "D-303"
         }
       ],
       "4-5": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "SM",
+          "teacher": "SPS",
+          "room": "D-303"
         }
       ]
     },
@@ -596,37 +668,49 @@
       "section": "IT-7",
       "9-10": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "AI Lab (G-A) / SM Lab (G-B)",
+          "teacher": "MRS / SKN",
+          "room": "CS106 / CS115"
         }
       ],
       "10-11": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "AI Lab (G-A) / SM Lab (G-B)",
+          "teacher": "MRS / SKN",
+          "room": "CS106 / CS115"
         }
       ],
       "11-12": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "SM Lab (G-A) / AI Lab (G-B)",
+          "teacher": "SKN / MRS",
+          "room": "CS115 / CS107"
         }
       ],
       "12-1": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "SM Lab (G-A) / AI Lab (G-B)",
+          "teacher": "SKN / MRS",
+          "room": "CS115 / CS107"
         }
       ],
       "2-3": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "4-5": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ]
     }
@@ -795,37 +879,49 @@
       "section": "CSE-5",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "AI/ML",
+          "teacher": "PKD",
+          "room": "B-205"
         }
       ],
       "10-11": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "CNS",
+          "teacher": "SPanda",
+          "room": "B-205"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "12-1": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "2-3": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "TOC Lab (G-A) / OS Lab (G-B)",
+          "teacher": "GF2 / HSB",
+          "room": "CS208 / CS106"
         }
       ],
       "4-5": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "TOC Lab (G-A) / OS Lab (G-B)",
+          "teacher": "GF2 / HSB",
+          "room": "CS208 / CS106"
         }
       ]
     },
@@ -833,22 +929,34 @@
       "section": "CSE-AI-ML-5",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "TOC Lab (G-A) / OS Lab (G-B)",
+          "teacher": "KKS / SBD",
+          "room": "CS204 / CS106"
         }
       ],
       "10-11": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "TOC Lab (G-A) / OS Lab (G-B)",
+          "teacher": "KKS / SBD",
+          "room": "CS204 / CS106"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "TOC",
+          "teacher": "KKS",
+          "room": "B-205"
         }
       ],
       "12-1": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DMDW",
+          "teacher": "BN",
+          "room": "B-205"
         }
       ],
       "2-3": [
@@ -858,12 +966,18 @@
       ],
       "3-4": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "room": "B-205",
+          "subject": "ISE",
+          "teacher": "ISE_TBD"
         }
       ],
       "4-5": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "room": "B-205",
+          "subject": "ISE",
+          "teacher": "ISE_TBD"
         }
       ]
     },
@@ -871,37 +985,43 @@
       "section": "CSE-7",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "IP",
+          "teacher": "KN_IP",
+          "room": "D-303"
         }
       ],
       "10-11": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "IWP",
+          "teacher": "GF6",
+          "room": "D-303"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "12-1": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "2-3": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "4-5": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ]
     },
@@ -919,12 +1039,18 @@
       ],
       "11-12": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "CS",
+          "teacher": "AD",
+          "room": "D-303"
         }
       ],
       "12-1": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "SM",
+          "teacher": "SKN",
+          "room": "D-303"
         }
       ],
       "2-3": [
@@ -1117,37 +1243,55 @@
       "section": "CSE-5",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "OS",
+          "teacher": "HSB",
+          "room": "B-205"
         }
       ],
       "10-11": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "AI/ML",
+          "teacher": "PKD",
+          "room": "B-205"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "CNS",
+          "teacher": "SPanda",
+          "room": "B-205"
         }
       ],
       "12-1": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "TOC",
+          "teacher": "GF2",
+          "room": "B-205"
         }
       ],
       "2-3": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "OS Lab (G-A) / AI/ML Lab (G-B)",
+          "teacher": "HSB / PKD",
+          "room": "CS204 / CS106"
         }
       ],
       "4-5": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "OS Lab (G-A) / AI/ML Lab (G-B)",
+          "teacher": "HSB / PKD",
+          "room": "CS204 / CS106"
         }
       ]
     },
@@ -1155,38 +1299,44 @@
       "section": "CSE-AI-ML-5",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "10-11": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "12-1": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "2-3": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "TOC",
+          "teacher": "KKS",
+          "room": "B-205"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "DMDW",
+          "teacher": "BN",
+          "room": "B-205"
         }
       ],
       "4-5": [
         {
           "status": "Assigned",
-          "room": "B 205",
+          "room": "B-205",
           "subject": "ISE",
           "teacher": "ISE_TBD"
         }
@@ -1196,37 +1346,52 @@
       "section": "CSE-7",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "SM Lab (G-A) / IWP Lab (G-B)",
+          "teacher": "SPS / GF6",
+          "room": "CS107 / CS105"
         }
       ],
       "10-11": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "SM Lab (G-A) / IWP Lab (G-B)",
+          "teacher": "SPS / GF6",
+          "room": "CS107 / CS105"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "12-1": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "2-3": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "IWP",
+          "teacher": "GF6",
+          "room": "D-303"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "IP",
+          "teacher": "KN_IP",
+          "room": "D-303"
         }
       ],
       "4-5": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "SM",
+          "teacher": "SPS",
+          "room": "D-303"
         }
       ]
     },
@@ -1234,12 +1399,18 @@
       "section": "IT-7",
       "9-10": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "SM",
+          "teacher": "SKN",
+          "room": "D-303"
         }
       ],
       "10-11": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "AI",
+          "teacher": "MRS",
+          "room": "D-303"
         }
       ],
       "11-12": [
@@ -1433,40 +1604,52 @@
       "section": "CSE-5",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "AI/ML Lab (G-A) / TOC Lab (G-B)",
+          "teacher": "PKD / GF2",
+          "room": "CS106 / CS208"
         }
       ],
       "10-11": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "AI/ML Lab (G-A) / TOC Lab (G-B)",
+          "teacher": "PKD / GF2",
+          "room": "CS106 / CS208"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "OS",
+          "teacher": "HSB",
+          "room": "B-205"
         }
       ],
       "12-1": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "CNS",
+          "teacher": "SPanda",
+          "room": "B-205"
         }
       ],
       "2-3": [
         {
           "status": "Assigned",
-          "room": "B111",
+          "room": "B-205",
           "subject": "ED",
-          "teacher": null
+          "teacher": "ED_TBD"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "4-5": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ]
     },
@@ -1474,40 +1657,49 @@
       "section": "CSE-AI-ML-5",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "OS",
+          "teacher": "SBD",
+          "room": "B-205"
         }
       ],
       "10-11": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "TOC",
+          "teacher": "KKS",
+          "room": "B-205"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "12-1": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "2-3": [
         {
-          "status": "Assigned",
-          "room": "B205",
-          "subject": "ED",
-          "teacher": "ED_TBD"
+          "status": "Free"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "AI/ML",
+          "teacher": "GF3",
+          "room": "B-205"
         }
       ],
       "4-5": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "DMDW",
+          "teacher": "BN",
+          "room": "B-205"
         }
       ]
     },
@@ -1515,37 +1707,43 @@
       "section": "CSE-7",
       "9-10": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "10-11": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "11-12": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "AI",
+          "teacher": "GF_AI",
+          "room": "D-303"
         }
       ],
       "12-1": [
         {
-          "status": "To Be Assigned"
+          "status": "Assigned",
+          "subject": "IP",
+          "teacher": "KN_IP",
+          "room": "D-303"
         }
       ],
       "2-3": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "3-4": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ],
       "4-5": [
         {
-          "status": "To Be Assigned"
+          "status": "Free"
         }
       ]
     },
@@ -1573,17 +1771,26 @@
       ],
       "2-3": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "AI",
+          "teacher": "MRS",
+          "room": "D-303"
         }
       ],
       "3-4": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "SM",
+          "teacher": "SKN",
+          "room": "D-303"
         }
       ],
       "4-5": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "CS",
+          "teacher": "AD",
+          "room": "D-303"
         }
       ]
     }
