@@ -31,8 +31,8 @@
       "2-3": [
         {
           "status": "Assigned",
-          "subject": "DS",
-          "teacher": "SK",
+          "subject": "OOP",
+          "teacher": "AVL",
           "room": "B-209"
         }
       ],
@@ -47,8 +47,8 @@
       "4-5": [
         {
           "status": "Assigned",
-          "subject": "OOP",
-          "teacher": "AVL",
+          "subject": "DS",
+          "teacher": "SK",
           "room": "B-209"
         }
       ]
@@ -76,8 +76,8 @@
       "12-1": [
         {
           "status": "Assigned",
-          "subject": "OOP",
-          "teacher": "SKB",
+          "subject": "DBE",
+          "teacher": "GF4",
           "room": "A-302"
         }
       ],
@@ -88,12 +88,18 @@
       ],
       "3-4": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DS Lab (G-A) / DBE Lab (G-B)",
+          "teacher": "SKS / GF4",
+          "room": "CS105 / CS107"
         }
       ],
       "4-5": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DS Lab (G-A) / DBE Lab (G-B)",
+          "teacher": "SKS / GF4",
+          "room": "CS105 / CS107"
         }
       ]
     },
@@ -132,12 +138,18 @@
       ],
       "3-4": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "OOP Lab (G-A) / DBE Lab (G-B)",
+          "teacher": "SS / KN",
+          "room": "CS106 / CS204"
         }
       ],
       "4-5": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "OOP Lab (G-A) / DBE Lab (G-B)",
+          "teacher": "SS / KN",
+          "room": "CS106 / CS204"
         }
       ]
     },
@@ -305,19 +317,25 @@
       "section": "CSE-A-3",
       "9-10": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DLD Lab (G-A) / DBE Lab (G-B)",
+          "teacher": "AM / SP",
+          "room": "CS107 / CS105"
         }
       ],
       "10-11": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DLD Lab (G-A) / DBE Lab (G-B)",
+          "teacher": "AM / SP",
+          "room": "CS107 / CS105"
         }
       ],
       "11-12": [
         {
           "status": "Assigned",
-          "subject": "OOP",
-          "teacher": "AVL",
+          "subject": "DS",
+          "teacher": "SK",
           "room": "B-209"
         }
       ],
@@ -358,26 +376,32 @@
       "10-11": [
         {
           "status": "Assigned",
-          "subject": "OOP",
-          "teacher": "SKB",
+          "subject": "DS",
+          "teacher": "SKS",
           "room": "A-302"
         }
       ],
       "11-12": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DBE Lab (G-A) / DS Lab (G-B)",
+          "teacher": "GF4 / SKS",
+          "room": "CS105 / CS208"
         }
       ],
       "12-1": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DBE Lab (G-A) / DS Lab (G-B)",
+          "teacher": "GF4 / SKS",
+          "room": "CS105 / CS208"
         }
       ],
       "2-3": [
         {
           "status": "Assigned",
-          "subject": "DBE",
-          "teacher": "GF4",
+          "subject": "DLD",
+          "teacher": "PKS",
           "room": "A-302"
         }
       ],
@@ -392,8 +416,8 @@
       "4-5": [
         {
           "status": "Assigned",
-          "subject": "DS",
-          "teacher": "SKS",
+          "subject": "OOP",
+          "teacher": "SKB",
           "room": "A-302"
         }
       ]
@@ -403,8 +427,8 @@
       "9-10": [
         {
           "status": "Assigned",
-          "subject": "OOP",
-          "teacher": "SS",
+          "subject": "DS",
+          "teacher": "GS",
           "room": "B-209"
         }
       ],
@@ -429,8 +453,8 @@
       "2-3": [
         {
           "status": "Assigned",
-          "subject": "DS",
-          "teacher": "GS",
+          "subject": "DBE",
+          "teacher": "KN",
           "room": "B-209"
         }
       ],
@@ -445,8 +469,8 @@
       "4-5": [
         {
           "status": "Assigned",
-          "subject": "DBE",
-          "teacher": "KN",
+          "subject": "OOP",
+          "teacher": "SS",
           "room": "B-209"
         }
       ]
@@ -613,16 +637,16 @@
       "9-10": [
         {
           "status": "Assigned",
-          "subject": "OOP",
-          "teacher": "AVL",
+          "subject": "DS",
+          "teacher": "SK",
           "room": "B-209"
         }
       ],
       "10-11": [
         {
           "status": "Assigned",
-          "subject": "DLD",
-          "teacher": "AM",
+          "subject": "OOP",
+          "teacher": "AVL",
           "room": "B-209"
         }
       ],
@@ -646,12 +670,18 @@
       ],
       "3-4": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "OOP Lab (G-A) / DLD Lab (G-B)",
+          "teacher": "AVL / AM",
+          "room": "CS105 / CS107"
         }
       ],
       "4-5": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "OOP Lab (G-A) / DLD Lab (G-B)",
+          "teacher": "AVL / AM",
+          "room": "CS105 / CS107"
         }
       ]
     },
@@ -670,16 +700,16 @@
       "11-12": [
         {
           "status": "Assigned",
-          "subject": "DBE",
-          "teacher": "GF4",
+          "subject": "OOP",
+          "teacher": "SKB",
           "room": "A-302"
         }
       ],
       "12-1": [
         {
           "status": "Assigned",
-          "subject": "DS",
-          "teacher": "SKS",
+          "subject": "DBE",
+          "teacher": "GF4",
           "room": "A-302"
         }
       ],
@@ -691,8 +721,8 @@
       "3-4": [
         {
           "status": "Assigned",
-          "subject": "DLD",
-          "teacher": "PKS",
+          "subject": "DS",
+          "teacher": "SKS",
           "room": "A-302"
         }
       ],
@@ -709,12 +739,18 @@
       "section": "CSE-B-3",
       "9-10": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DBE Lab (G-A) / DS Lab (G-B)",
+          "teacher": "KN / GS",
+          "room": "CS105 / CS107"
         }
       ],
       "10-11": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DBE Lab (G-A) / DS Lab (G-B)",
+          "teacher": "KN / GS",
+          "room": "CS105 / CS107"
         }
       ],
       "11-12": [
@@ -932,8 +968,8 @@
       "12-1": [
         {
           "status": "Assigned",
-          "subject": "DS",
-          "teacher": "SK",
+          "subject": "DLD",
+          "teacher": "AM",
           "room": "B-209"
         }
       ],
@@ -944,12 +980,18 @@
       ],
       "3-4": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DBE Lab (G-A) / DS Lab (G-B)",
+          "teacher": "SP / SK",
+          "room": "CS105 / CS107"
         }
       ],
       "4-5": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DBE Lab (G-A) / DS Lab (G-B)",
+          "teacher": "SP / SK",
+          "room": "CS105 / CS107"
         }
       ]
     },
@@ -958,8 +1000,8 @@
       "9-10": [
         {
           "status": "Assigned",
-          "subject": "DBE",
-          "teacher": "GF4",
+          "subject": "OOP",
+          "teacher": "SKB",
           "room": "A-302"
         }
       ],
@@ -973,19 +1015,25 @@
       ],
       "11-12": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DLD Lab (G-A) / OOP Lab (G-B)",
+          "teacher": "PKS / SKB",
+          "room": "CS107 / CS105"
         }
       ],
       "12-1": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DLD Lab (G-A) / OOP Lab (G-B)",
+          "teacher": "PKS / SKB",
+          "room": "CS107 / CS105"
         }
       ],
       "2-3": [
         {
           "status": "Assigned",
-          "subject": "DLD",
-          "teacher": "PKS",
+          "subject": "DBE",
+          "teacher": "GF4",
           "room": "A-302"
         }
       ],
@@ -1000,8 +1048,8 @@
       "4-5": [
         {
           "status": "Assigned",
-          "subject": "OOP",
-          "teacher": "SKB",
+          "subject": "DLD",
+          "teacher": "PKS",
           "room": "A-302"
         }
       ]
@@ -1019,26 +1067,32 @@
       "10-11": [
         {
           "status": "Assigned",
-          "subject": "DS",
-          "teacher": "GS",
+          "subject": "DLD",
+          "teacher": "SWP",
           "room": "B-209"
         }
       ],
       "11-12": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DS Lab (G-A) / DLD Lab (G-B)",
+          "teacher": "GS / SWP",
+          "room": "CS208 / CS106"
         }
       ],
       "12-1": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DS Lab (G-A) / DLD Lab (G-B)",
+          "teacher": "GS / SWP",
+          "room": "CS208 / CS106"
         }
       ],
       "2-3": [
         {
           "status": "Assigned",
-          "subject": "DLD",
-          "teacher": "SWP",
+          "subject": "DS",
+          "teacher": "GS",
           "room": "B-209"
         }
       ],
@@ -1236,35 +1290,41 @@
       ],
       "11-12": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DS Lab (G-A) / OOP Lab (G-B)",
+          "teacher": "SK / AVL",
+          "room": "CS105 / CS106"
         }
       ],
       "12-1": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DS Lab (G-A) / OOP Lab (G-B)",
+          "teacher": "SK / AVL",
+          "room": "CS105 / CS106"
         }
       ],
       "2-3": [
         {
           "status": "Assigned",
-          "subject": "DS",
-          "teacher": "SK",
+          "subject": "OOP",
+          "teacher": "AVL",
           "room": "B-209"
         }
       ],
       "3-4": [
         {
           "status": "Assigned",
-          "subject": "DLD",
-          "teacher": "AM",
+          "subject": "DBE",
+          "teacher": "SP",
           "room": "B-209"
         }
       ],
       "4-5": [
         {
           "status": "Assigned",
-          "subject": "DBE",
-          "teacher": "SP",
+          "subject": "DLD",
+          "teacher": "AM",
           "room": "B-209"
         }
       ]
@@ -1273,12 +1333,18 @@
       "section": "CSE-AIML-3",
       "9-10": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "OOP Lab (G-A) / DLD Lab (G-B)",
+          "teacher": "SKB / PKS",
+          "room": "CS107 / CS105"
         }
       ],
       "10-11": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "OOP Lab (G-A) / DLD Lab (G-B)",
+          "teacher": "SKB / PKS",
+          "room": "CS107 / CS105"
         }
       ],
       "11-12": [
@@ -1348,12 +1414,18 @@
       ],
       "3-4": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DLD Lab (G-A) / OOP Lab (G-B)",
+          "teacher": "SWP / SS",
+          "room": "CS107 / CS105"
         }
       ],
       "4-5": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "DLD Lab (G-A) / OOP Lab (G-B)",
+          "teacher": "SWP / SS",
+          "room": "CS107 / CS105"
         }
       ]
     },
