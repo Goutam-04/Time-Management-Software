@@ -261,8 +261,8 @@
       "9-10": [
         {
           "status": "Assigned",
-          "subject": "AI",
-          "teacher": "GF_AI",
+          "subject": "IP",
+          "teacher": "KN_IP",
           "room": "D-303"
         }
       ],
@@ -294,12 +294,18 @@
       ],
       "3-4": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "IWP Lab (G-A) / SM Lab (G-B)",
+          "teacher": "GF6 / SPS",
+          "room": "CS208 / CS220"
         }
       ],
       "4-5": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "IWP Lab (G-A) / SM Lab (G-B)",
+          "teacher": "GF6 / SPS",
+          "room": "CS208 / CS220"
         }
       ]
     },
@@ -307,22 +313,34 @@
       "section": "IT-7",
       "9-10": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "AI Lab (G-A) / SM Lab (G-B)",
+          "teacher": "MRS / SKN",
+          "room": "CS208 / CS220"
         }
       ],
       "10-11": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "AI Lab (G-A) / SM Lab (G-B)",
+          "teacher": "MRS / SKN",
+          "room": "CS208 / CS220"
         }
       ],
       "11-12": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "SM Lab (G-A) / AI Lab (G-B)",
+          "teacher": "SKN / MRS",
+          "room": "CS208 / CS220"
         }
       ],
       "12-1": [
         {
-          "status": "Free"
+          "status": "Assigned",
+          "subject": "SM Lab (G-A) / AI Lab (G-B)",
+          "teacher": "SKN / MRS",
+          "room": "CS208 / CS220"
         }
       ],
       "2-3": [
@@ -333,16 +351,16 @@
       "3-4": [
         {
           "status": "Assigned",
-          "subject": "CS",
-          "teacher": "AD",
+          "subject": "AI",
+          "teacher": "MRS",
           "room": "D-303"
         }
       ],
       "4-5": [
         {
           "status": "Assigned",
-          "subject": "AI",
-          "teacher": "MRS",
+          "subject": "CS",
+          "teacher": "AD",
           "room": "D-303"
         }
       ]
@@ -619,17 +637,17 @@
       "9-10": [
         {
           "status": "Assigned",
-          "subject": "IWP Lab (G-A) / SM Lab (G-B)",
-          "teacher": "GF6 / SPS",
-          "room": "CS204 / CS208"
+          "subject": "SM Lab (G-A) / IWP Lab (G-B)",
+          "teacher": "SPS / GF6",
+          "room": "CS208 / CS220"
         }
       ],
       "10-11": [
         {
           "status": "Assigned",
-          "subject": "IWP Lab (G-A) / SM Lab (G-B)",
-          "teacher": "GF6 / SPS",
-          "room": "CS204 / CS208"
+          "subject": "SM Lab (G-A) / IWP Lab (G-B)",
+          "teacher": "SPS / GF6",
+          "room": "CS208 / CS220"
         }
       ],
       "11-12": [
@@ -658,8 +676,8 @@
       "4-5": [
         {
           "status": "Assigned",
-          "subject": "SM",
-          "teacher": "SPS",
+          "subject": "IWP",
+          "teacher": "GF6",
           "room": "D-303"
         }
       ]
@@ -668,34 +686,22 @@
       "section": "IT-7",
       "9-10": [
         {
-          "status": "Assigned",
-          "subject": "AI Lab (G-A) / SM Lab (G-B)",
-          "teacher": "MRS / SKN",
-          "room": "CS106 / CS115"
+          "status": "Free"
         }
       ],
       "10-11": [
         {
-          "status": "Assigned",
-          "subject": "AI Lab (G-A) / SM Lab (G-B)",
-          "teacher": "MRS / SKN",
-          "room": "CS106 / CS115"
+          "status": "Free"
         }
       ],
       "11-12": [
         {
-          "status": "Assigned",
-          "subject": "SM Lab (G-A) / AI Lab (G-B)",
-          "teacher": "SKN / MRS",
-          "room": "CS115 / CS107"
+          "status": "Free"
         }
       ],
       "12-1": [
         {
-          "status": "Assigned",
-          "subject": "SM Lab (G-A) / AI Lab (G-B)",
-          "teacher": "SKN / MRS",
-          "room": "CS115 / CS107"
+          "status": "Free"
         }
       ],
       "2-3": [
@@ -986,16 +992,16 @@
       "9-10": [
         {
           "status": "Assigned",
-          "subject": "IP",
-          "teacher": "KN_IP",
+          "subject": "AI",
+          "teacher": "GF_AI",
           "room": "D-303"
         }
       ],
       "10-11": [
         {
           "status": "Assigned",
-          "subject": "IWP",
-          "teacher": "GF6",
+          "subject": "IP",
+          "teacher": "KN_IP",
           "room": "D-303"
         }
       ],
@@ -1040,8 +1046,8 @@
       "11-12": [
         {
           "status": "Assigned",
-          "subject": "CS",
-          "teacher": "AD",
+          "subject": "AI",
+          "teacher": "MRS",
           "room": "D-303"
         }
       ],
@@ -1346,18 +1352,12 @@
       "section": "CSE-7",
       "9-10": [
         {
-          "status": "Assigned",
-          "subject": "SM Lab (G-A) / IWP Lab (G-B)",
-          "teacher": "SPS / GF6",
-          "room": "CS107 / CS105"
+          "status": "Free"
         }
       ],
       "10-11": [
         {
-          "status": "Assigned",
-          "subject": "SM Lab (G-A) / IWP Lab (G-B)",
-          "teacher": "SPS / GF6",
-          "room": "CS107 / CS105"
+          "status": "Free"
         }
       ],
       "11-12": [
@@ -1373,16 +1373,16 @@
       "2-3": [
         {
           "status": "Assigned",
-          "subject": "IWP",
-          "teacher": "GF6",
+          "subject": "AI",
+          "teacher": "GF_AI",
           "room": "D-303"
         }
       ],
       "3-4": [
         {
           "status": "Assigned",
-          "subject": "IP",
-          "teacher": "KN_IP",
+          "subject": "IWP",
+          "teacher": "GF6",
           "room": "D-303"
         }
       ],
@@ -1400,16 +1400,16 @@
       "9-10": [
         {
           "status": "Assigned",
-          "subject": "SM",
-          "teacher": "SKN",
+          "subject": "CS",
+          "teacher": "AD",
           "room": "D-303"
         }
       ],
       "10-11": [
         {
           "status": "Assigned",
-          "subject": "AI",
-          "teacher": "MRS",
+          "subject": "SM",
+          "teacher": "SKN",
           "room": "D-303"
         }
       ],
@@ -1718,8 +1718,8 @@
       "11-12": [
         {
           "status": "Assigned",
-          "subject": "AI",
-          "teacher": "GF_AI",
+          "subject": "SM",
+          "teacher": "SPS",
           "room": "D-303"
         }
       ],
