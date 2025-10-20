@@ -4,13 +4,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "docx": "^9.5.1",
     "exceljs": "^4.4.0",
     "fs": "^0.0.1-security",
     "pdf-lib": "^1.17.1",
