@@ -257,7 +257,7 @@ function makeDocument() {
 }
 
 const pdfDoc = printer.createPdfKitDocument(makeDocument());
-pdfDoc.pipe(fs.createWriteStream("./GG.pdf"));
+pdfDoc.pipe(fs.createWriteStream("./timetable.pdf"));
 pdfDoc.end();
 
 console.log("✅ Timetable PDF generated with:");

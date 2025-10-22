@@ -73,8 +73,6 @@ fi
 
 echo -e "${GREEN}✅ 7th Semester solved successfully${NC}"
 
-
-
 # Step 6: Run json2pdf.js (if exists)
 if [ -f "json2pdf.js" ]; then
     echo -e "\n${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
@@ -87,6 +85,42 @@ if [ -f "json2pdf.js" ]; then
         exit 1
     fi
     echo -e "${GREEN}✅ PDF generation completed${NC}"
+
+    # 🧭 Open the generated PDF in the browser
+    PDF_FILE=""
+    if [ -f "timetable.pdf" ]; then
+        PDF_FILE="timetable.pdf"
+    elif [ -f "src/timetable.pdf" ]; then
+        PDF_FILE="src/timetable.pdf"
+    fi
+
+    if [ -n "$PDF_FILE" ]; then
+        echo -e "${YELLOW}🌐 Opening $PDF_FILE in your browser...${NC}"
+        # Cross-platform open
+        if command -v xdg-open >/dev/null; then
+            xdg-open "$PDF_FILE" >/dev/null 2>&1 &
+        elif command -v open >/dev/null; then
+            open "$PDF_FILE" >/dev/null 2>&1 &
+        elif command -v start >/dev/null; then
+            start "$PDF_FILE" >/dev/null 2>&1 &
+        else
+            echo -e "${RED}⚠️ Could not detect a method to open the PDF automatically.${NC}"
+        fi
+    fi
+fi
+
+# Step 7: Run json2doc.js (if exists)
+if [ -f "json2doc.js" ]; then
+    echo -e "\n${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+    echo -e "${GREEN}📄 Step 7: Running json2doc.js...${NC}"
+    echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
+    node json2doc.js
+    
+    if [ $? -ne 0 ]; then
+        echo -e "${RED}❌ Error: json2doc.js failed${NC}"
+        exit 1
+    fi
+    echo -e "${GREEN}✅ Docx generation completed${NC}"
 fi
 
 # Final summary
@@ -102,6 +136,10 @@ fi
 
 if [ -f "timetable.pdf" ] || [ -f "src/timetable.pdf" ]; then
     echo -e "   • PDF timetable generated"
+fi
+
+if [ -f "Timetable.docx" ] || [ -f "src/Timetable.docx" ]; then
+    echo -e "   • Docx timetable generated"
 fi
 
 echo -e "\n${YELLOW}💡 Tip: If the 7th semester solver fails, run:${NC}"
