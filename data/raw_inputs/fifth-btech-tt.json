@@ -1,0 +1,325 @@
+{
+  "CSE": {
+    "Monday": [
+      {
+        "time": "9:00 AM - 10:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "10:00 AM - 11:00 AM",
+        "status": "Assigned",
+        "subject": "ISE",
+        "teacher": null,
+        "room": "B205"
+      },
+      {
+        "time": "11:00 AM - 12:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "12:00 PM - 1:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "2:00 PM - 3:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "3:00 PM - 4:00 PM",
+        "status": "Assigned",
+        "subject": "ED",
+        "teacher": null,
+        "room": "B205"
+      },
+      {
+        "time": "4:00 PM - 5:00 PM",
+        "status": "Free"
+      }
+    ],
+    "Tuesday": [
+      {
+        "time": "9:00 AM - 10:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "10:00 AM - 11:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "11:00 AM - 12:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "12:00 PM - 1:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "2:00 PM - 3:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "3:00 PM - 4:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "4:00 PM - 5:00 PM",
+        "status": "Assigned",
+        "subject": "ISE",
+        "teacher": null,
+        "room": "B205"
+      }
+    ],
+    "Wednesday": [
+      {
+        "time": "9:00 AM - 10:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "10:00 AM - 11:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "11:00 AM - 12:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "12:00 PM - 1:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "2:00 PM - 3:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "3:00 PM - 4:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "4:00 PM - 5:00 PM",
+        "status": "Free"
+      }
+    ],
+    "Thursday": [
+      {
+        "time": "9:00 AM - 10:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "10:00 AM - 11:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "11:00 AM - 12:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "12:00 PM - 1:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "2:00 PM - 3:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "3:00 PM - 4:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "4:00 PM - 5:00 PM",
+        "status": "Free"
+      }
+    ],
+    "Friday": [
+      {
+        "time": "9:00 AM - 10:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "10:00 AM - 11:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "11:00 AM - 12:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "12:00 PM - 1:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "2:00 PM - 3:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "3:00 PM - 4:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "4:00 PM - 5:00 PM",
+        "status": "Free"
+      }
+    ]
+  },
+  "CSE (AI/ML)": {
+    "Monday": [
+      {
+        "time": "9:00 AM - 10:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "10:00 AM - 11:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "11:00 AM - 12:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "12:00 PM - 1:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "2:00 PM - 3:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "3:00 PM - 4:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "4:00 PM - 5:00 PM",
+        "status": "Free"
+      }
+    ],
+    "Tuesday": [
+      {
+        "time": "9:00 AM - 10:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "10:00 AM - 11:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "11:00 AM - 12:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "12:00 PM - 1:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "2:00 PM - 3:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "3:00 PM - 4:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "4:00 PM - 5:00 PM",
+        "status": "Free"
+      }
+    ],
+    "Wednesday": [
+      {
+        "time": "9:00 AM - 10:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "10:00 AM - 11:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "11:00 AM - 12:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "12:00 PM - 1:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "2:00 PM - 3:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "3:00 PM - 4:00 PM",
+        "status": "Assigned",
+        "subject": "ISE",
+        "teacher": null,
+        "room": "B205"
+      },
+      {
+        "time": "4:00 PM - 5:00 PM",
+        "status": "Free"
+      }
+    ],
+    "Thursday": [
+      {
+        "time": "9:00 AM - 10:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "10:00 AM - 11:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "11:00 AM - 12:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "12:00 PM - 1:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "2:00 PM - 3:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "3:00 PM - 4:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "4:00 PM - 5:00 PM",
+        "status": "Assigned",
+        "subject": "ISE",
+        "teacher": null,
+        "room": "B 205"
+      }
+    ],
+    "Friday": [
+      {
+        "time": "9:00 AM - 10:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "10:00 AM - 11:00 AM",
+        "status": "Free"
+      },
+      {
+        "time": "11:00 AM - 12:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "12:00 PM - 1:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "2:00 PM - 3:00 PM",
+        "status": "Assigned",
+        "subject": "ED",
+        "teacher": null,
+        "room": "B205"
+      },
+      {
+        "time": "3:00 PM - 4:00 PM",
+        "status": "Free"
+      },
+      {
+        "time": "4:00 PM - 5:00 PM",
+        "status": "Free"
+      }
+    ]
+  }
+}
+

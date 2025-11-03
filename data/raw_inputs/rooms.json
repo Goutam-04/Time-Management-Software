@@ -1,0 +1,529 @@
+[
+  {
+    "slNo": 1,
+    "roomNo": "B-205",
+    "areaSqFt": 1200,
+    "assignedDepartments": [
+      "CSE",
+      "IT"
+    ],
+    "semester": "5th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 2,
+    "roomNo": "B-207",
+    "areaSqFt": 1500,
+    "assignedDepartments": [
+      "ETC"
+    ],
+    "semester": "3rd",
+    "type": "Classroom",
+    "notes": "Earlier Drawing Hall"
+  },
+  {
+    "slNo": 3,
+    "roomNo": "B-209",
+    "areaSqFt": 1200,
+    "assignedDepartments": [
+      "CSE",
+      "IT"
+    ],
+    "semester": "3rd",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 4,
+    "roomNo": "B-210",
+    "areaSqFt": 900,
+    "assignedDepartments": [],
+    "semester": "1st",
+    "type": "Drawing Hall"
+  },
+  {
+    "slNo": 5,
+    "roomNo": "B-211",
+    "areaSqFt": 900,
+    "assignedDepartments": [
+      "Math"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "M.Sc."
+  },
+  {
+    "slNo": 6,
+    "roomNo": "B-302",
+    "areaSqFt": 1200,
+    "assignedDepartments": [
+      "EEE"
+    ],
+    "semester": "5th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 7,
+    "roomNo": "B-306",
+    "areaSqFt": 900,
+    "assignedDepartments": [
+      "ETC"
+    ],
+    "semester": "5th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 8,
+    "roomNo": "B-308",
+    "areaSqFt": 1200,
+    "assignedDepartments": [
+      "PE"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "O SECTION"
+  },
+  {
+    "slNo": 9,
+    "roomNo": "B-309",
+    "areaSqFt": 600,
+    "assignedDepartments": [
+      "PHY"
+    ],
+    "semester": null,
+    "type": "Lab"
+  },
+  {
+    "slNo": 10,
+    "roomNo": "B-310",
+    "areaSqFt": 1500,
+    "assignedDepartments": [
+      "EE"
+    ],
+    "semester": "3rd",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 11,
+    "roomNo": "B-311",
+    "areaSqFt": 900,
+    "assignedDepartments": [
+      "EE"
+    ],
+    "semester": "5th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 12,
+    "roomNo": "B-312",
+    "areaSqFt": 600,
+    "assignedDepartments": [
+      "PHY"
+    ],
+    "semester": null,
+    "type": "Lab"
+  },
+  {
+    "slNo": 13,
+    "roomNo": "B-320",
+    "areaSqFt": 800,
+    "assignedDepartments": [
+      "CM",
+      "MME"
+    ],
+    "semester": "5th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 14,
+    "roomNo": "B-321",
+    "areaSqFt": 900,
+    "assignedDepartments": [
+      "CM",
+      "MME"
+    ],
+    "semester": "3rd",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 15,
+    "roomNo": "B-322",
+    "areaSqFt": 400,
+    "assignedDepartments": [
+      "MME",
+      "CSE",
+      "IT"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "M.TECH"
+  },
+  {
+    "slNo": 16,
+    "roomNo": "B-323",
+    "areaSqFt": 600,
+    "assignedDepartments": [
+      "EE"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "M.TECH"
+  },
+  {
+    "slNo": 17,
+    "roomNo": "C-205",
+    "areaSqFt": 1000,
+    "assignedDepartments": [
+      "EEE",
+      "AIML"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "R & O Sections"
+  },
+  {
+    "slNo": 18,
+    "roomNo": "C-223",
+    "areaSqFt": 1200,
+    "assignedDepartments": [
+      "CE"
+    ],
+    "semester": "7th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 19,
+    "roomNo": "C-227",
+    "areaSqFt": 1250,
+    "assignedDepartments": [
+      "ME"
+    ],
+    "semester": "3rd",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 20,
+    "roomNo": "C-229",
+    "areaSqFt": 1250,
+    "assignedDepartments": [
+      "ME"
+    ],
+    "semester": "7th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 21,
+    "roomNo": "C-230",
+    "areaSqFt": 1000,
+    "assignedDepartments": [
+      "CE"
+    ],
+    "semester": "3rd",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 22,
+    "roomNo": "C-303",
+    "areaSqFt": 1000,
+    "assignedDepartments": [
+      "CM",
+      "MME"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "A & F Sections"
+  },
+  {
+    "slNo": 23,
+    "roomNo": "C-307",
+    "areaSqFt": 1250,
+    "assignedDepartments": [
+      "ETC"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "S & T Sections"
+  },
+  {
+    "slNo": 24,
+    "roomNo": "C-308",
+    "areaSqFt": 1250,
+    "assignedDepartments": [
+      "CE"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "B & C Sections"
+  },
+  {
+    "slNo": 25,
+    "roomNo": "C-309",
+    "areaSqFt": 1000,
+    "assignedDepartments": [
+      "CSE",
+      "IT"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "M & N Sections"
+  },
+  {
+    "slNo": 26,
+    "roomNo": "C-313",
+    "areaSqFt": 1000,
+    "assignedDepartments": [
+      "EE"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "P & Q Sections"
+  },
+  {
+    "slNo": 27,
+    "roomNo": "C-314",
+    "areaSqFt": 1250,
+    "assignedDepartments": [
+      "ME"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "D & E Sections"
+  },
+  {
+    "slNo": 28,
+    "roomNo": "C-320",
+    "areaSqFt": 800,
+    "assignedDepartments": [
+      "CE"
+    ],
+    "semester": "5th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 29,
+    "roomNo": "C-321",
+    "areaSqFt": 600,
+    "assignedDepartments": [
+      "ME"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "M Tech"
+  },
+  {
+    "slNo": 30,
+    "roomNo": "C-322",
+    "areaSqFt": 750,
+    "assignedDepartments": [
+      "CHEM"
+    ],
+    "semester": null,
+    "type": "Lab"
+  },
+  {
+    "slNo": 31,
+    "roomNo": "C-323",
+    "areaSqFt": 600,
+    "assignedDepartments": [
+      "CHEM"
+    ],
+    "semester": null,
+    "type": "Lab"
+  },
+  {
+    "slNo": 32,
+    "roomNo": "C-324",
+    "areaSqFt": 400,
+    "assignedDepartments": [
+      "CE"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "M.TECH"
+  },
+  {
+    "slNo": 33,
+    "roomNo": "C-325",
+    "areaSqFt": 750,
+    "assignedDepartments": [
+      "ME"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "M.TECH"
+  },
+  {
+    "slNo": 34,
+    "roomNo": "C-326",
+    "areaSqFt": 500,
+    "assignedDepartments": [
+      "CE"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "M Tech"
+  },
+  {
+    "slNo": 35,
+    "roomNo": "C-327",
+    "areaSqFt": 1000,
+    "assignedDepartments": [
+      "ME"
+    ],
+    "semester": "5th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 36,
+    "roomNo": "C-329",
+    "areaSqFt": 750,
+    "assignedDepartments": [
+      "CE"
+    ],
+    "semester": null,
+    "type": "Classroom"
+  },
+  {
+    "slNo": 37,
+    "roomNo": "C-330",
+    "areaSqFt": 750,
+    "assignedDepartments": [
+      "CE"
+    ],
+    "semester": null,
+    "type": "Classroom"
+  },
+  {
+    "slNo": 38,
+    "roomNo": "D-219",
+    "areaSqFt": 1000,
+    "assignedDepartments": [
+      "ETC"
+    ],
+    "semester": "7th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 39,
+    "roomNo": "D-220",
+    "areaSqFt": 1250,
+    "assignedDepartments": [
+      "EE"
+    ],
+    "semester": "7th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 40,
+    "roomNo": "D-225",
+    "areaSqFt": 600,
+    "assignedDepartments": [
+      "PE"
+    ],
+    "semester": "5th",
+    "type": "Classroom",
+    "notes": "Mtech also"
+  },
+  {
+    "slNo": 41,
+    "roomNo": "D-233",
+    "areaSqFt": 600,
+    "assignedDepartments": [
+      "PE"
+    ],
+    "semester": "3rd & 7th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 42,
+    "roomNo": "D-303",
+    "areaSqFt": 800,
+    "assignedDepartments": [
+      "CSE",
+      "IT"
+    ],
+    "semester": "7th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 43,
+    "roomNo": "D-304",
+    "areaSqFt": 500,
+    "assignedDepartments": [
+      "ETC"
+    ],
+    "semester": null,
+    "type": "Classroom",
+    "notes": "M.TECH"
+  },
+  {
+    "slNo": 44,
+    "roomNo": "D-306",
+    "areaSqFt": 750,
+    "assignedDepartments": [
+      "INT MSC"
+    ],
+    "semester": "1st",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 45,
+    "roomNo": "D-309",
+    "areaSqFt": 500,
+    "assignedDepartments": [
+      "MCA"
+    ],
+    "semester": null,
+    "type": "Classroom"
+  },
+  {
+    "slNo": 46,
+    "roomNo": "D-310",
+    "areaSqFt": 800,
+    "assignedDepartments": [
+      "MME"
+    ],
+    "semester": "7th",
+    "type": "Classroom"
+  },
+  {
+    "slNo": 47,
+    "roomNo": "D-311",
+    "areaSqFt": 750,
+    "assignedDepartments": [
+      "Architecture"
+    ],
+    "semester": null,
+    "type": "Classroom"
+  },
+  {
+    "slNo": 48,
+    "roomNo": "D-316",
+    "areaSqFt": 750,
+    "assignedDepartments": [
+      "MATHS"
+    ],
+    "semester": null,
+    "type": "Classroom"
+  },
+  {
+    "slNo": 49,
+    "roomNo": "E-201",
+    "areaSqFt": 1500,
+    "assignedDepartments": [
+      "EEE"
+    ],
+    "semester": "7th",
+    "type": "Classroom",
+    "notes": "M. Tech EEE also"
+  },
+  {
+    "slNo": 50,
+    "roomNo": "CS-209",
+    "areaSqFt": 600,
+    "assignedDepartments": [
+      "CSE"
+    ],
+    "semester": null,
+    "type": "Seminar Hall"
+  }
+]

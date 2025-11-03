@@ -1,0 +1,1349 @@
+[
+  {
+    "slNo": 1,
+    "fullName": "Prof. H S Behera",
+    "abbreviation": "HSB",
+    "designation": "Professor",
+    "theorySubjects": [
+      {
+        "code": "PC",
+        "title": "Operating Systems",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Operating System Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 2,
+    "fullName": "Dr. Suvasini Panigrahi",
+    "abbreviation": "SP",
+    "designation": "Asso. Prof",
+    "theorySubjects": [
+      {
+        "code": "PC",
+        "title": "DataBase Engineering",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Database Engineering Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 3,
+    "fullName": "Dr. Sucheta Panda",
+    "abbreviation": "SPanda",
+    "designation": "Asso. Prof",
+    "theorySubjects": [
+      {
+        "code": "PE-1",
+        "title": "Cryptographic Foundation and Network Security",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": "Elective-I",
+        "title": "Machine Learning",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "PC",
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "PC",
+        "title": "Seminar on Internship",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 4,
+    "fullName": "Dr. M R Senapati",
+    "abbreviation": "MRS",
+    "designation": "Asso. Prof",
+    "theorySubjects": [
+      {
+        "code": "UPC",
+        "title": "Artificial Intelligence",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": "BCS15001",
+        "title": "Artificial Intelligence & Expert Systems",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "PC",
+        "title": "Artificial Intelligence Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 5,
+    "fullName": "Dr. P K Sahu",
+    "abbreviation": "PKS",
+    "designation": "Asso. Prof",
+    "theorySubjects": [
+      {
+        "code": "PC",
+        "title": "Digital Logic Design",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "PC",
+        "title": "Digital Logic Design Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 6,
+    "fullName": "Dr. Satyabrata Das",
+    "abbreviation": "SBD",
+    "designation": "Asso. Prof",
+    "theorySubjects": [
+      {
+        "code": "PC",
+        "title": "Operating Systems",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": "PE-5",
+        "title": "Internet of Things",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "PC",
+        "title": "Operating System Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 7,
+    "fullName": "Dr. S P Sahoo",
+    "abbreviation": "SPS",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "UES",
+        "title": "C & Data Structures",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Data Structure Using C",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "PC",
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "PC",
+        "title": "Seminar on Internship",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "MCA02002",
+        "title": "Data Structure Using C Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 8,
+    "fullName": "Dr. K K Sahu",
+    "abbreviation": "KKS",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "PC",
+        "title": "Theory of Computation",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Compiler Design",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "PC",
+        "title": "Theory of Computation Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Theory of Computation Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 9,
+    "fullName": "Dr. S K Nayak",
+    "abbreviation": "SKN",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "PE – IV",
+        "title": "Simulation & Modelling",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": "Elective-II",
+        "title": "Real-Time System",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "UEL",
+        "title": "Database Engineering Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "PC",
+        "title": "Seminar on SIRE-1",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Seminar on SIRE-1",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 10,
+    "fullName": "Dr. Sasmita Acharya",
+    "abbreviation": "SA",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "UES",
+        "title": "C & Data Structures",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": "BCS15001",
+        "title": "Advanced Computer Architecture",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "UEL",
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Object Oriented Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Seminar and Technical Writing",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 11,
+    "fullName": "Mrs. Sasmita Behera",
+    "abbreviation": "SB",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "OE – III",
+        "title": "Simulation & Modelling",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Computer System Architecture",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "AI and ML Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "PC",
+        "title": "Seminar on Internship",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 12,
+    "fullName": "Dr. Sumitra Kisan",
+    "abbreviation": "SK",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "PC",
+        "title": "Data Structures",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Operating System",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "PC-ACC",
+        "title": "Data Structures Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Data Structures Lab",
+        "periodsPerWeek": null,
+        "sections": 1
+      },
+      {
+        "code": "MCA01007",
+        "title": "Operating System Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 13,
+    "fullName": "Mr. S K Sathua",
+    "abbreviation": "SKS",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "PC",
+        "title": "Data Structures",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "BCS15001",
+        "title": "Advanced Data Structures & Algorithms",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "PC",
+        "title": "Data Structures Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "PC",
+        "title": "Advanced Computing Laboratory",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 14,
+    "fullName": "Mrs. Etuari Oram",
+    "abbreviation": "EO",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "UES",
+        "title": "C & Data Structures",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Programming with JAVA",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "UEL",
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "JAVA Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 15,
+    "fullName": "Dr. Bighnaraj Naik",
+    "abbreviation": "BN",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "PE-1",
+        "title": "Data Mining and Data Warehousing",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": "OE-1",
+        "title": "Machine Learning",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "PC",
+        "title": "Theory of Computation Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "PC",
+        "title": "AI and ML Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 16,
+    "fullName": "Dr. P K Das",
+    "abbreviation": "PKD",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "PC",
+        "title": "Soft Computing(AI&ML)",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": "PC",
+        "title": "Artificial Intelligence and Machine Learning (PC-12)",
+        "periodsPerWeek": null,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Simulation Using Matlab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "AI and ML Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 17,
+    "fullName": "Dr. G Shial",
+    "abbreviation": "GS",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "PC",
+        "title": "Data Structures",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": "BCS15001",
+        "title": "Intrusion Detection Systems",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Data Structures Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Object Oriented Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 18,
+    "fullName": "Mr. A V Lakra",
+    "abbreviation": "AVL",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "PC(ACC-1)",
+        "title": "Object-Oriented Programming",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Database Engineering",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "UEL",
+        "title": "Object Oriented Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "PC-ACC",
+        "title": "Object Oriented Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "MCA01008",
+        "title": "Database Engineering Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 19,
+    "fullName": "Mr. Suresh Srichandan",
+    "abbreviation": "SS",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "UES",
+        "title": "C & Data Structures",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": "PC(ACC-1)",
+        "title": "Object-Oriented Programming",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "UEL",
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "PC",
+        "title": "Object Oriented Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 20,
+    "fullName": "Mrs. Alina Mishra",
+    "abbreviation": "AM",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "PC",
+        "title": "Digital Logic Design",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": "PC",
+        "title": "AI: Principles and Techniques(AI&ML)",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "PC",
+        "title": "Digital Logic Design Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "UEL",
+        "title": "Artificial Intelligence Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 21,
+    "fullName": "Dr. Santi Kumari Behera",
+    "abbreviation": "SKB",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "PC(ACC-1)",
+        "title": "Object-Oriented Programming",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": "UPC",
+        "title": "Data Mining & Data Warehousing(AI&ML)",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Web Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Data Mining Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 22,
+    "fullName": "Mrs. Alina Dash",
+    "abbreviation": "AD",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "OE-III",
+        "title": "Knowledge Engineering & Expert Systems(AI & ML)",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": "UPC",
+        "title": "Cyber Security",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "UEL",
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Seminar on SIRE-1",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 23,
+    "fullName": "Dr. K. Naik",
+    "abbreviation": "KN",
+    "designation": "Asst. Prof",
+    "theorySubjects": [
+      {
+        "code": "PC",
+        "title": "Data Base Engineering",
+        "periodsPerWeek": 3,
+        "sections": 1
+      },
+      {
+        "code": "PE– IV",
+        "title": "Image Processing",
+        "periodsPerWeek": null,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": "PC",
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Database Engineering Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "UPR",
+        "title": "Project II",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 24,
+    "fullName": "Ms. Geetanjali Bhoi",
+    "abbreviation": "GB",
+    "designation": null,
+    "theorySubjects": [],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Theory of Computation Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": "PC",
+        "title": "AI and ML Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      }
+    ]
+  },
+  {
+    "slNo": 25,
+    "fullName": "MTech 1",
+    "abbreviation": null,
+    "designation": null,
+    "theorySubjects": [],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 3
+      }
+    ]
+  },
+  {
+    "slNo": 26,
+    "fullName": "MTech 2",
+    "abbreviation": null,
+    "designation": null,
+    "theorySubjects": [],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 3
+      }
+    ]
+  },
+  {
+    "slNo": 27,
+    "fullName": "MTech 3",
+    "abbreviation": null,
+    "designation": null,
+    "theorySubjects": [],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Digital Logic Design Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 28,
+    "fullName": "MTech 4",
+    "abbreviation": null,
+    "designation": null,
+    "theorySubjects": [],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Digital Logic Design Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Data Structure Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      }
+    ]
+  },
+  {
+    "slNo": 29,
+    "fullName": "MTech 5",
+    "abbreviation": null,
+    "designation": null,
+    "theorySubjects": [],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Database Engineering Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Object Oriented Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 30,
+    "fullName": "Guest Faculty 1",
+    "abbreviation": "GF 1",
+    "designation": null,
+    "theorySubjects": [
+      {
+        "code": null,
+        "title": "C & Data Structures",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 6
+      }
+    ]
+  },
+  {
+    "slNo": 31,
+    "fullName": "Guest Faculty 2",
+    "abbreviation": "GF 2",
+    "designation": null,
+    "theorySubjects": [
+      {
+        "code": null,
+        "title": "C & Data Structures",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 6
+      }
+    ]
+  },
+  {
+    "slNo": 32,
+    "fullName": "Guest Faculty 3",
+    "abbreviation": "GF 3",
+    "designation": null,
+    "theorySubjects": [
+      {
+        "code": null,
+        "title": "C & Data Structures",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Programming Lab",
+        "periodsPerWeek": "2,2",
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Object Oriented Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Digital Logic Design Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Data Structures Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 33,
+    "fullName": "Guest Faculty 4",
+    "abbreviation": "Gf4",
+    "designation": null,
+    "theorySubjects": [
+      {
+        "code": null,
+        "title": "C & Data Structures",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Data Structures Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Database Engineering Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Object Oriented Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 34,
+    "fullName": "Guest Faculty 5",
+    "abbreviation": "GF 5",
+    "designation": null,
+    "theorySubjects": [
+      {
+        "code": null,
+        "title": "Theory of Computation",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Object Oriented Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Digital Logic Design Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Data Structures Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Database Engineering Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 35,
+    "fullName": "Guest Faculty 6",
+    "abbreviation": "GF 6",
+    "designation": null,
+    "theorySubjects": [
+      {
+        "code": null,
+        "title": "Artificial Intelligence and Machine Learning (PC-12)",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Database Engineering Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Object Oriented Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Operating System Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "AI and ML Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 36,
+    "fullName": "Guest Faculty 7",
+    "abbreviation": "GF 7",
+    "designation": null,
+    "theorySubjects": [
+      {
+        "code": null,
+        "title": "Artificial Intelligence",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "AI and ML Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Theory of Computation Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Operating System Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Web Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 37,
+    "fullName": "Guest Faculty 8",
+    "abbreviation": "GF 8",
+    "designation": null,
+    "theorySubjects": [
+      {
+        "code": null,
+        "title": "Data Structure Using C",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "Web Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Artificial Intelligence Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Data Structure Using C Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Operating System Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Database Engineering Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  },
+  {
+    "slNo": 38,
+    "fullName": "Guest Faculty 9",
+    "abbreviation": "GF 9",
+    "designation": null,
+    "theorySubjects": [
+      {
+        "code": null,
+        "title": "Programming in C",
+        "periodsPerWeek": 3,
+        "sections": 1
+      }
+    ],
+    "sessionalSubjects": [
+      {
+        "code": null,
+        "title": "JAVA Programming Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      },
+      {
+        "code": null,
+        "title": "Data Structure Lab",
+        "periodsPerWeek": 2,
+        "sections": 2
+      },
+      {
+        "code": null,
+        "title": "Prog. In C Lab",
+        "periodsPerWeek": 2,
+        "sections": 1
+      }
+    ]
+  }
+]
+
