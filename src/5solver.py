@@ -18,7 +18,12 @@ import sys
 import copy
 from ortools.sat.python import cp_model
 
-def load_data(config_path, data_path):
+# --- Main script execution ---
+config_path = 'config.json'
+data_path = 'data.json'
+output_path = 'updated_timetable.json'
+
+def load_data(config_path, data_path, output_path):
     """Loads config and timetable data from JSON files."""
     try:
         with open(config_path, 'r') as f:
@@ -114,13 +119,9 @@ def save_solution(solver, new_classes, lab_assignments, timetable_data, config_d
     except IOError as e:
         print(f"Error: Could not write to output file. {e}", file=sys.stderr)
 
-# --- Main script execution ---
-config_path = 'config.json'
-data_path = 'data.json'
-output_path = 'updated_timetable.json'
 
 def main():
-    config_data, timetable_data = load_data(config_path, data_path)
+    config_data, timetable_data = load_data(config_path, data_path, output_path)
 
     # --- THIS IS THE ONLY MAJOR CHANGE ---
     sections_to_solve = ["CSE-5", "CSE-AI-ML-5"]
@@ -148,6 +149,7 @@ def main():
     for day in days:
         for section_obj in timetable_data[day]:
             for slot in slots:
+                if slot not in section_obj: continue # Skip if slot missing
                 slot_info = section_obj[slot][0]
                 if slot_info['status'] == "Assigned":
                     teacher = slot_info.get('teacher')
@@ -182,7 +184,7 @@ def main():
             list_index = section_index_map[day][section]
             section_obj = timetable_data[day][list_index]
             for slot in slots:
-                if section_obj[slot][0]['status'] == "To Be Assigned":
+                if slot in section_obj and section_obj[slot][0]['status'] == "To Be Assigned":
                     tba_slots_by_section[section].append((day, slot))
 
     lab_slot_map = {"9-11": ("9-10", "10-11"), "11-1": ("11-12", "12-1"), "3-5": ("3-4", "4-5")}
@@ -204,7 +206,13 @@ def main():
                 lab_teacher_map[section][lab_name] = lab_teacher
                 all_teachers.add(lab_teacher)
             else:
-                print(f"Warning: No teacher for {lab_name} in section {section}", file=sys.stderr)
+                # Fallback for labs like "Seminar Lab" which don't match a theory subject
+                if lab_name in teacher_subject_map[section]:
+                     lab_teacher = teacher_subject_map[section][lab_name]
+                     lab_teacher_map[section][lab_name] = lab_teacher
+                     all_teachers.add(lab_teacher)
+                else:
+                    print(f"Warning: No teacher for {lab_name} in section {section}", file=sys.stderr)
 
     for section in sections_to_solve:
         labs = config_data['labs'][section]
@@ -230,6 +238,7 @@ def main():
             dummy_lab_room_id_map[section, group] = f"DUMMY_LAB_ROOM_{section}_{group}"
 
     teacher_name_to_id = {name: i for i, name in enumerate(sorted(list(all_teachers)))}
+    inv_teacher_name_to_id = {i: name for name, i in teacher_name_to_id.items()} # <-- ADDED THIS LINE
     theory_room_name_to_id = {name: i for i, name in enumerate(sorted(list(all_theory_rooms)))}
     lab_room_name_to_id = {name: i for i, name in enumerate(sorted(list(all_lab_rooms)))}
     inv_lab_room_id_to_name = {i: name for name, i in lab_room_name_to_id.items()}
@@ -241,10 +250,27 @@ def main():
         section_teacher_id_list_map[section] = [teacher_name_to_id[teacher_subject_map[section][s]] for s in core_subjects]
 
     for section in all_sections_in_config:
-        labs = config_data['labs'][section]
+        labs = config_data['labs'].get(section, []) # Use .get for safety
         lab_teacher_id_list_map[section] = [teacher_name_to_id[lab_teacher_map[section][ln]] for ln in labs if ln in lab_teacher_map[section]]
 
     model = cp_model.CpModel()
+
+    # --- 4.5. Define Teacher Unavailability (NEW) ---
+    print("Defining teacher unavailability constraints...")
+    teacher_unavailability = {
+        "SA": {"Monday": ["11-12", "12-1", "3-4"], "Wednesday": ["9-10"], "Thursday": ["11-12"]},
+        "EO": {"Tuesday": ["10-11", "11-12", "12-1"], "Wednesday": ["12-1"], "Thursday": ["3-4"], "Friday": ["9-10", "10-11"]},
+        "GF7": {"Monday": ["2-3"], "Tuesday": ["12-1"], "Wednesday": ["9-10"], "Thursday": ["3-4", "4-5"]},
+        "SPS": {"Monday": ["9-10"], "Wednesday": ["11-12", "12-1", "4-5"], "Friday": ["10-11"]},
+        "GF8": {"Monday": ["12-1"], "Tuesday": ["11-12", "12-1"], "Wednesday": ["11-12"], "Thursday": ["3-4"]},
+        "SS": {"Tuesday": ["10-11"], "Wednesday": ["11-12"], "Thursday": ["11-12", "12-1"], "Friday": ["3-4"]},
+        "GF9": {"Monday": ["3-4"], "Tuesday": ["11-12", "3-4", "4-5"], "Wednesday": ["3-4"]},
+        "GF10": {"Monday": ["3-4", "4-5"], "Tuesday": ["9-10"], "Thursday": ["10-11"], "Friday": ["12-1"]},
+        "AS": {"Monday": ["3-4", "4-5"]},
+        "SP": {"Tuesday": ["3-4", "4-5"]},
+        "KN": {"Thursday": ["3-4", "4-5"]},
+    }
+
     new_classes = {}
     for section in sections_to_solve:
         num_core_subjects = len(core_subject_map[section])
@@ -274,6 +300,45 @@ def main():
                 lab_group_A_room[section, day, lab_slot_idx] = model.NewIntVarFromDomain(cp_model.Domain.FromValues(room_A_domain), f"lab_A_room_{section}_{day}_{lab_slot_idx}")
                 lab_group_B_room[section, day, lab_slot_idx] = model.NewIntVarFromDomain(cp_model.Domain.FromValues(room_B_domain), f"lab_B_room_{section}_{day}_{lab_slot_idx}")
 
+    # --- Constraint 0: Teacher Unavailability (NEW) ---
+    print("Adding teacher unavailability constraints...")
+    
+    # A. For Theory Classes
+    for (section, day, slot), subject_var in new_classes.items():
+        if section not in section_teacher_id_list_map: continue
+        teacher_options = section_teacher_id_list_map[section]
+        for subject_index, teacher_id in enumerate(teacher_options):
+            teacher_name = inv_teacher_name_to_id.get(teacher_id)
+            if teacher_name and teacher_name in teacher_unavailability:
+                if day in teacher_unavailability[teacher_name] and slot in teacher_unavailability[teacher_name][day]:
+                    # This teacher is unavailable. The subject var (which holds a subject_index) cannot be this subject_index.
+                    print(f"  -> Blocking {teacher_name} (Theory) for {section} on {day} at {slot}")
+                    model.Add(subject_var != subject_index)
+    
+    # B. For Lab Classes
+    for section in sections_to_solve:
+        if section not in lab_teacher_id_list_map: continue
+        lab_teacher_ids = lab_teacher_id_list_map[section]
+        for day in days:
+            for lab_slot_idx, lab_slot_name in inv_lab_slot_id_to_name.items():
+                slot1, slot2 = lab_slot_map[lab_slot_name]
+                
+                gA_subj = lab_group_A_subject[section, day, lab_slot_idx]
+                gB_subj = lab_group_B_subject[section, day, lab_slot_idx]
+                
+                for lab_index, teacher_id in enumerate(lab_teacher_ids):
+                    teacher_name = inv_teacher_name_to_id.get(teacher_id)
+                    if teacher_name and teacher_name in teacher_unavailability:
+                        if day in teacher_unavailability[teacher_name]:
+                            if (slot1 in teacher_unavailability[teacher_name][day] or 
+                                slot2 in teacher_unavailability[teacher_name][day]):
+                                # This teacher is unavailable for this 2-hour lab slot.
+                                # Neither Group A nor Group B can have this lab index.
+                                print(f"  -> Blocking Lab {inv_lab_name_map[section][lab_index]} ({teacher_name}) for {section} on {day} at {lab_slot_name}")
+                                model.Add(gA_subj != lab_index)
+                                model.Add(gB_subj != lab_index)
+
+
     print("Adding subject frequency constraints (Theory)...")
     for section in sections_to_solve:
         section_vars = [new_classes[s, d, t] for (s, d, t) in new_classes if s == section]
@@ -300,6 +365,7 @@ def main():
             list_index = section_index_map[day][section]
             section_obj = timetable_data[day][list_index]
             for slot in slots:
+                if slot not in section_obj: continue
                 if section_obj[slot][0]['status'] == "Assigned":
                     subject = section_obj[slot][0].get('subject')
                     if subject in core_subject_map[section]:
@@ -374,6 +440,7 @@ def main():
             
             for section in all_sections_in_config:
                 list_index = section_index_map[day][section]
+                if slot not in timetable_data[day][list_index]: continue
                 slot_info = timetable_data[day][list_index][slot][0]
                 if slot_info['status'] == "Assigned":
                     teacher, room = slot_info.get('teacher'), slot_info.get('room')
@@ -406,12 +473,14 @@ def main():
                     if section_lab_count[section] == 0: continue
                     dummy_teacher_A_id = teacher_name_to_id[dummy_teacher_id_map[section, "A"]]
                     dummy_teacher_B_id = teacher_name_to_id[dummy_teacher_id_map[section, "B"]]
+                    
                     gA_subj, gA_room = lab_group_A_subject[section, day, lab_slot_idx], lab_group_A_room[section, day, lab_slot_idx]
                     gA_teacher = model.NewIntVar(0, len(teacher_name_to_id)-1, f"lab_A_teach_{section}_{day}_{slot}")
                     teacher_list_A = lab_teacher_id_list_map[section] + [dummy_teacher_A_id]
                     model.AddElement(gA_subj, teacher_list_A, gA_teacher)
                     teacher_vars_at_slot.append(gA_teacher)
                     lab_room_vars_at_slot.append(gA_room)
+
                     gB_subj, gB_room = lab_group_B_subject[section, day, lab_slot_idx], lab_group_B_room[section, day, lab_slot_idx]
                     gB_teacher = model.NewIntVar(0, len(teacher_name_to_id)-1, f"lab_B_teach_{section}_{day}_{slot}")
                     teacher_list_B = lab_teacher_id_list_map[section] + [dummy_teacher_B_id]

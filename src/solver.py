@@ -164,7 +164,13 @@ def main():
     for section in sections_to_solve:
         core_subjects = config_data['core_subjects'][section]
         core_subject_map[section] = {subject: i for i, subject in enumerate(core_subjects)}
-        inv_core_subject_map[section] = {i: subject for i, subject in enumerate(core_subjects)}
+        
+        # --------------------- THIS IS THE FIX ---------------------
+        # The line was:
+        # inv_core_subject_map[section] = {i: subject for i, subject in enumerate(core_subject_map[section].items())}
+        # It should be:
+        inv_core_subject_map[section] = {i: subject for subject, i in core_subject_map[section].items()}
+        # -----------------------------------------------------------
         
         teacher_subject_map[section] = {}
         for subject, teacher in config_data['subjects'][section]:
@@ -249,6 +255,7 @@ def main():
             dummy_lab_room_id_map[section, group] = f"DUMMY_LAB_ROOM_{section}_{group}"
 
     teacher_name_to_id = {name: i for i, name in enumerate(sorted(list(all_teachers)))}
+    inv_teacher_name_to_id = {i: name for name, i in teacher_name_to_id.items()} # <-- This was the other required line
     theory_room_name_to_id = {name: i for i, name in enumerate(sorted(list(all_theory_rooms)))}
     lab_room_name_to_id = {name: i for i, name in enumerate(sorted(list(all_lab_rooms)))}
     inv_lab_room_id_to_name = {i: name for name, i in lab_room_name_to_id.items()}
@@ -274,6 +281,22 @@ def main():
 
     # --- 4. Initialize CP-SAT Model ---
     model = cp_model.CpModel()
+
+    # --- 4.5. Define Teacher Unavailability (NEW) ---
+    print("Defining teacher unavailability constraints...")
+    teacher_unavailability = {
+        "SA": {"Monday": ["11-12", "12-1", "3-4"], "Wednesday": ["9-10"], "Thursday": ["11-12"]},
+        "EO": {"Tuesday": ["10-11", "11-12", "12-1"], "Wednesday": ["12-1"], "Thursday": ["3-4"], "Friday": ["9-10", "10-11"]},
+        "GF7": {"Monday": ["2-3"], "Tuesday": ["12-1"], "Wednesday": ["9-10"], "Thursday": ["3-4", "4-5"]},
+        "SPS": {"Monday": ["9-10"], "Wednesday": ["11-12", "12-1", "4-5"], "Friday": ["10-11"]},
+        "GF8": {"Monday": ["12-1"], "Tuesday": ["11-12", "12-1"], "Wednesday": ["11-12"], "Thursday": ["3-4"]},
+        "SS": {"Tuesday": ["10-11"], "Wednesday": ["11-12"], "Thursday": ["11-12", "12-1"], "Friday": ["3-4"]},
+        "GF9": {"Monday": ["3-4"], "Tuesday": ["11-12", "3-4", "4-5"], "Wednesday": ["3-4"]},
+        "GF10": {"Monday": ["3-4", "4-5"], "Tuesday": ["9-10"], "Thursday": ["10-11"], "Friday": ["12-1"]},
+        "AS": {"Monday": ["3-4", "4-5"]},
+        "SP": {"Tuesday": ["3-4", "4-5"]},
+        "KN": {"Thursday": ["3-4", "4-5"]},
+    }
 
     # --- 5. Create Model Variables ---
     
@@ -328,6 +351,42 @@ def main():
                     cp_model.Domain.FromValues(room_B_domain), f"lab_B_room_{section}_{day}_{lab_slot_idx}")
 
     # --- 6. Add Constraints ---
+
+    # --- Constraint 0: Teacher Unavailability (NEW) ---
+    print("Adding teacher unavailability constraints...")
+    
+    # A. For Theory Classes
+    for (section, day, slot), subject_var in new_classes.items():
+        teacher_options = section_teacher_id_list_map[section]
+        for subject_index, teacher_id in enumerate(teacher_options):
+            teacher_name = inv_teacher_name_to_id.get(teacher_id)
+            if teacher_name and teacher_name in teacher_unavailability:
+                if day in teacher_unavailability[teacher_name] and slot in teacher_unavailability[teacher_name][day]:
+                    # This teacher is unavailable. The subject var (which holds a subject_index) cannot be this subject_index.
+                    print(f"  -> Blocking {teacher_name} (Theory) for {section} on {day} at {slot}")
+                    model.Add(subject_var != subject_index)
+    
+    # B. For Lab Classes
+    for section in sections_to_solve:
+        lab_teacher_ids = lab_teacher_id_list_map[section]
+        for day in days:
+            for lab_slot_idx, lab_slot_name in inv_lab_slot_id_to_name.items():
+                slot1, slot2 = lab_slot_map[lab_slot_name]
+                
+                gA_subj = lab_group_A_subject[section, day, lab_slot_idx]
+                gB_subj = lab_group_B_subject[section, day, lab_slot_idx]
+                
+                for lab_index, teacher_id in enumerate(lab_teacher_ids):
+                    teacher_name = inv_teacher_name_to_id.get(teacher_id)
+                    if teacher_name and teacher_name in teacher_unavailability:
+                        if day in teacher_unavailability[teacher_name]:
+                            if (slot1 in teacher_unavailability[teacher_name][day] or 
+                                slot2 in teacher_unavailability[teacher_name][day]):
+                                # This teacher is unavailable for this 2-hour lab slot.
+                                # Neither Group A nor Group B can have this lab index.
+                                print(f"  -> Blocking Lab {inv_lab_name_map[section][lab_index]} ({teacher_name}) for {section} on {day} at {lab_slot_name}")
+                                model.Add(gA_subj != lab_index)
+                                model.Add(gB_subj != lab_index)
 
     # --- Constraint 1: Subject Frequency (Theory) ---
     print("Adding subject frequency constraints (Theory)...")
