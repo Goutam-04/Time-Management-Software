@@ -2,9 +2,9 @@
   "settings": {
     "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     "all_slots": ["9-10", "10-11", "11-12", "12-1", "2-3", "3-4", "4-5"],
-    "lab_slot_starts": ["9-10", "11-12", "3-4"],
+    "lab_slot": ["9-11", "11-1", "3-5"],
     "groups": ["A", "B"],
-    "solver_timeout_seconds": 30
+    "solver_timeout_seconds": 60
   },
   "sections": [
     "CSE-A-3", "CSE-B-3", "CSE-AIML-3",
@@ -12,20 +12,29 @@
     "CSE-7", "IT-7"
   ],
   "section_theory_rooms": {
-    "CSE-A-3": "B-209", "CSE-B-3": "B-209", "CSE-AIML-3": "A-32",
+    "CSE-A-3": "B-209", "CSE-B-3": "B-209", "CSE-AIML-3": "A-302",
     "CSE-5": "B-205", "CSE-AI-ML-5": "B-205", "CSE-7": "D-303", "IT-7": "D-303"
   },
   "lab_rooms": [
     "CS105", "CS106", "CS107", "CS115", "CS204", "CS205", "CS208", "CS220"
   ],
+  "core_subjects": {
+    "CSE-A-3": ["DLD", "DS", "DBE", "OOP"],
+    "CSE-B-3": ["DLD", "DS", "DBE", "OOP"],
+    "CSE-AIML-3": ["DLD", "DS", "DBE", "OOP"],
+    "CSE-5": ["TOC", "OS", "AI/ML", "CNS"],
+    "CSE-AI-ML-5": ["TOC", "OS", "AI/ML", "DMDW"],
+    "CSE-7": ["AI", "IWP", "IP", "SM"],
+    "IT-7": ["AI", "CS", "SM"]
+  },
   "subjects": {
-    "CSE-A-3": [["DLD", "AM"], ["DS", "SK"], ["DBE", "SP"], ["OOP", "AVL"]],
-    "CSE-B-3": [["DLD", "SWP"], ["DS", "GS"], ["DBE", "KN"], ["OOP", "SS"]],
-    "CSE-AIML-3":  [["DLD", "PKS"], ["DS", "SKS"], ["DBE", "GF4"], ["OOP", "SKB"]],
-    "CSE-5":   [["TOC", "GF2"], ["OS", "HSB"], ["AI/ML", "PKD"], ["CNS", "SPanda"]],
-    "CSE-AI-ML-5":    [["TOC", "KKS"], ["OS", "SBD"], ["AI/ML", "GF3"], ["DMDW", "BN"]],
-    "CSE-7":   [["AI", "GF5"], ["IWP", "GF6"], ["IP", "KN"],["SM", "SPS"]],
-    "IT-7":    [["AI", "MRS"], ["CS", "AD"], ["SM", "SKN"]]
+    "CSE-A-3": [["DLD", "AM"], ["DS", "SK"], ["DBE", "SP"], ["OOP", "AVL"], ["EE", "RS2"], ["MATH", "GF5"]],
+    "CSE-B-3": [["DLD", "SWP"], ["DS", "GS"], ["DBE", "KN"], ["OOP", "SS"], ["EE", "RS2"], ["MATH", "GF5"]],
+    "CSE-AIML-3":  [["DLD", "PKS"], ["DS", "SKS"], ["DBE", "GF4"], ["OOP", "SKB"], ["EE", "EE_TBD"], ["MATH", "SKPn"]],
+    "CSE-5":   [["TOC", "GF2"], ["OS", "HSB"], ["AI/ML", "PKD"], ["CNS", "SPanda"], ["ISE", "ISE_TBD"], ["ED", "ED_TBD"]],
+    "CSE-AI-ML-5": [["TOC", "KKS"], ["OS", "SBD"], ["AI/ML", "GF3"], ["DMDW", "BN"], ["ISE", "ISE_TBD"], ["ED", "ED_TBD"]],
+    "CSE-7":   [["AI", "GF_AI"], ["IWP", "GF6"], ["IP", "KN_IP"], ["SM", "SPS"], ["IWP Lab", "GF6"], ["SM Lab", "SPS"]],
+    "IT-7":    [["AI", "MRS"], ["CS", "AD"], ["SM", "SKN"], ["AI Lab", "MRS"], ["SM Lab", "SKN"]]
   },
   "labs": {
     "CSE-A-3": ["DLD Lab", "DS Lab", "DBE Lab", "OOP Lab"],
@@ -33,7 +42,7 @@
     "CSE-AIML-3":  ["DLD Lab", "DS Lab", "DBE Lab", "OOP Lab"],
     "CSE-5":   ["TOC Lab", "OS Lab", "AI/ML Lab"],
     "CSE-AI-ML-5":    ["TOC Lab", "OS Lab", "AI/ML Lab"],
-    "CSE-7":   ["Web Programming Lab","Seminar Lab"],
-    "IT-7":    ["Artificial Intelligence Lab","Seminar Lab"]
+    "CSE-7":   ["IWP Lab","SM Lab"],
+    "IT-7":    ["AI Lab","SM Lab"]
   }
 }

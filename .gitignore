@@ -1,10 +1,24 @@
-/node_modules
+# Node.js
+node_modules/
 ./package-lock.json
-.DS_Store
-.env
-.vscode
-dist
-.idea
 *.log
-*.tmp
+
+# Python
 __pycache__/
+*.pyc
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Environment
+.env
+
+# Generated Output
+# output/
+# *.pdf
+# *.docx

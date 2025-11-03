@@ -1,22 +1,16 @@
 {
-  "name": "minor",
+  "name": "timetable-generator-software",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "chmod +x ./generate.sh && ./generate.sh"
   },
-  "keywords": [],
+  "keywords": ["Timetable", "Software", "Education", "School", "University",  "Academic Scheduling", "Timetable Generator"],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "docx": "^9.5.1",
-    "exceljs": "^4.4.0",
     "fs": "^0.0.1-security",
-    "pdf-lib": "^1.17.1",
-    "pdfkit": "^0.17.1",
-    "pdfmake": "^0.2.20",
-    "puppeteer": "^24.17.0",
-    "xlsx": "^0.18.5"
+    "pdfmake": "^0.2.20"
   }
 }
